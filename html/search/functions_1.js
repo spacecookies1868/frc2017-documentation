@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['getsetvalue',['getSetValue',['../class_motion_profile_executor.html#aad1297807d386b66246ca4154e136485',1,'MotionProfileExecutor']]]
+  ['calculateaccumulatedyaw',['CalculateAccumulatedYaw',['../class_navx_p_i_d_source.html#ac9a334ad2d3d561f4b7e0d4686a1e3c3',1,'NavxPIDSource']]],
+  ['calculatedeltaangle',['CalculateDeltaAngle',['../class_pivot_command.html#a56f0c011b2a744f1ed0a2b5cb301cdb2',1,'PivotCommand']]],
+  ['control',['control',['../class_motion_profile_executor.html#a60a8d4ab5b168b31e75619b2a3683a78',1,'MotionProfileExecutor']]]
 ];

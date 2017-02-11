@@ -9,17 +9,13 @@ Inheritance diagram for Navx\+P\+I\+D\+Source\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_navx_p_i_d_source_a6d8910e49ac582970632e8ad20e9bc4b}\label{class_navx_p_i_d_source_a6d8910e49ac582970632e8ad20e9bc4b}} 
-{\bfseries Navx\+P\+I\+D\+Source} (\hyperlink{class_robot_model}{Robot\+Model} $\ast$robot)
+\hyperlink{class_navx_p_i_d_source_a6d8910e49ac582970632e8ad20e9bc4b}{Navx\+P\+I\+D\+Source} (\hyperlink{class_robot_model}{Robot\+Model} $\ast$robot)
 \item 
-\mbox{\Hypertarget{class_navx_p_i_d_source_af3d4863c8b9338340739bf0d85371827}\label{class_navx_p_i_d_source_af3d4863c8b9338340739bf0d85371827}} 
-double {\bfseries P\+I\+D\+Get} ()
+double \hyperlink{class_navx_p_i_d_source_af3d4863c8b9338340739bf0d85371827}{P\+I\+D\+Get} ()
 \item 
-\mbox{\Hypertarget{class_navx_p_i_d_source_ac9a334ad2d3d561f4b7e0d4686a1e3c3}\label{class_navx_p_i_d_source_ac9a334ad2d3d561f4b7e0d4686a1e3c3}} 
-double {\bfseries Calculate\+Accumulated\+Yaw} ()
+double \hyperlink{class_navx_p_i_d_source_ac9a334ad2d3d561f4b7e0d4686a1e3c3}{Calculate\+Accumulated\+Yaw} ()
 \item 
-\mbox{\Hypertarget{class_navx_p_i_d_source_a553daca7b260429b4808791ff11ada54}\label{class_navx_p_i_d_source_a553daca7b260429b4808791ff11ada54}} 
-void {\bfseries Reset\+Accumulated\+Yaw} ()
+void \hyperlink{class_navx_p_i_d_source_a553daca7b260429b4808791ff11ada54}{Reset\+Accumulated\+Yaw} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -40,6 +36,47 @@ double {\bfseries accumulated\+Yaw\+\_\+}
 \hyperlink{class_robot_model}{Robot\+Model} $\ast$ {\bfseries robot\+\_\+}
 \end{DoxyCompactItemize}
 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_navx_p_i_d_source_a6d8910e49ac582970632e8ad20e9bc4b}\label{class_navx_p_i_d_source_a6d8910e49ac582970632e8ad20e9bc4b}} 
+\index{Navx\+P\+I\+D\+Source@{Navx\+P\+I\+D\+Source}!Navx\+P\+I\+D\+Source@{Navx\+P\+I\+D\+Source}}
+\index{Navx\+P\+I\+D\+Source@{Navx\+P\+I\+D\+Source}!Navx\+P\+I\+D\+Source@{Navx\+P\+I\+D\+Source}}
+\subsubsection{\texorpdfstring{Navx\+P\+I\+D\+Source()}{NavxPIDSource()}}
+{\footnotesize\ttfamily Navx\+P\+I\+D\+Source\+::\+Navx\+P\+I\+D\+Source (\begin{DoxyParamCaption}\item[{\hyperlink{class_robot_model}{Robot\+Model} $\ast$}]{robot }\end{DoxyParamCaption})}
+
+Assigns robot and also resets accumulated yaw 
+\begin{DoxyParams}{Parameters}
+{\em robot} & a \hyperlink{class_robot_model}{Robot\+Model} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_navx_p_i_d_source_ac9a334ad2d3d561f4b7e0d4686a1e3c3}\label{class_navx_p_i_d_source_ac9a334ad2d3d561f4b7e0d4686a1e3c3}} 
+\index{Navx\+P\+I\+D\+Source@{Navx\+P\+I\+D\+Source}!Calculate\+Accumulated\+Yaw@{Calculate\+Accumulated\+Yaw}}
+\index{Calculate\+Accumulated\+Yaw@{Calculate\+Accumulated\+Yaw}!Navx\+P\+I\+D\+Source@{Navx\+P\+I\+D\+Source}}
+\subsubsection{\texorpdfstring{Calculate\+Accumulated\+Yaw()}{CalculateAccumulatedYaw()}}
+{\footnotesize\ttfamily double Navx\+P\+I\+D\+Source\+::\+Calculate\+Accumulated\+Yaw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates curr\+Yaw, calculates delta\+Yaw, calculates accumulated\+Yaw. \begin{DoxyReturn}{Returns}
+Accumulated\+Yaw 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_navx_p_i_d_source_af3d4863c8b9338340739bf0d85371827}\label{class_navx_p_i_d_source_af3d4863c8b9338340739bf0d85371827}} 
+\index{Navx\+P\+I\+D\+Source@{Navx\+P\+I\+D\+Source}!P\+I\+D\+Get@{P\+I\+D\+Get}}
+\index{P\+I\+D\+Get@{P\+I\+D\+Get}!Navx\+P\+I\+D\+Source@{Navx\+P\+I\+D\+Source}}
+\subsubsection{\texorpdfstring{P\+I\+D\+Get()}{PIDGet()}}
+{\footnotesize\ttfamily double Navx\+P\+I\+D\+Source\+::\+P\+I\+D\+Get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calculates and returns Accumulated\+Yaw \begin{DoxyReturn}{Returns}
+Accumulated\+Yaw 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_navx_p_i_d_source_a553daca7b260429b4808791ff11ada54}\label{class_navx_p_i_d_source_a553daca7b260429b4808791ff11ada54}} 
+\index{Navx\+P\+I\+D\+Source@{Navx\+P\+I\+D\+Source}!Reset\+Accumulated\+Yaw@{Reset\+Accumulated\+Yaw}}
+\index{Reset\+Accumulated\+Yaw@{Reset\+Accumulated\+Yaw}!Navx\+P\+I\+D\+Source@{Navx\+P\+I\+D\+Source}}
+\subsubsection{\texorpdfstring{Reset\+Accumulated\+Yaw()}{ResetAccumulatedYaw()}}
+{\footnotesize\ttfamily void Navx\+P\+I\+D\+Source\+::\+Reset\+Accumulated\+Yaw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets Accumulated\+Yaw and delta\+Yaw to zero and updates curr\+Yaw and last\+Yaw 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

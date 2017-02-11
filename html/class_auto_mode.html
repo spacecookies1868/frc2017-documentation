@@ -84,11 +84,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateQueue</
 <tr class="memitem:ae30ad1e90a36975db5b1bd6d0d764408"><td class="memItemLeft" align="right" valign="top"><a id="ae30ad1e90a36975db5b1bd6d0d764408"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()=0</td></tr>
 <tr class="separator:ae30ad1e90a36975db5b1bd6d0d764408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5eb2f835e2712588986ca8fd9a8735a"><td class="memItemLeft" align="right" valign="top"><a id="af5eb2f835e2712588986ca8fd9a8735a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (double currTimeSec, double deltaTimeSec)</td></tr>
+<tr class="memitem:af5eb2f835e2712588986ca8fd9a8735a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_auto_mode.html#af5eb2f835e2712588986ca8fd9a8735a">Update</a> (double currTimeSec, double deltaTimeSec)</td></tr>
 <tr class="separator:af5eb2f835e2712588986ca8fd9a8735a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f734a1af959e284fced7666e397bf65"><td class="memItemLeft" align="right" valign="top"><a id="a6f734a1af959e284fced7666e397bf65"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDone</b> ()</td></tr>
+<tr class="memitem:acb6a8d7e9e3635dd1d0af27297fe045f"><td class="memItemLeft" align="right" valign="top"><a id="acb6a8d7e9e3635dd1d0af27297fe045f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshIni</b> ()=0</td></tr>
+<tr class="separator:acb6a8d7e9e3635dd1d0af27297fe045f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f734a1af959e284fced7666e397bf65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_auto_mode.html#a6f734a1af959e284fced7666e397bf65">IsDone</a> ()</td></tr>
 <tr class="separator:a6f734a1af959e284fced7666e397bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -97,6 +98,76 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_auto_command.html">AutoCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>currentCommand</b></td></tr>
 <tr class="separator:acaf4e4b36bbc309c6fae4cdac56b38d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6f734a1af959e284fced7666e397bf65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f734a1af959e284fced7666e397bf65">&#9670;&nbsp;</a></span>IsDone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AutoMode::IsDone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns when <a class="el" href="class_auto_mode.html">AutoMode</a> is done </p><dl class="section return"><dt>Returns</dt><dd>true if there is no current command or current command is NULL </dd></dl>
+
+</div>
+</div>
+<a id="af5eb2f835e2712588986ca8fd9a8735a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5eb2f835e2712588986ca8fd9a8735a">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AutoMode::Update </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>currTimeSec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>deltaTimeSec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the current command and prints out if each command is complete and also if the automode update is finished </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currTimeSec</td><td>a double current time </td></tr>
+    <tr><td class="paramname">deltaTimeSec</td><td>a double how often to update </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/Users/maggiewang/Space_Cookies/spacecookies/frc2017/src/Auto/Modes/<a class="el" href="_auto_mode_8h_source.html">AutoMode.h</a></li>
 </ul>

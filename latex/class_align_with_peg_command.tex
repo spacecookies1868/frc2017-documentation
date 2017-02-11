@@ -1,26 +1,59 @@
 \hypertarget{class_align_with_peg_command}{}\section{Align\+With\+Peg\+Command Class Reference}
 \label{class_align_with_peg_command}\index{Align\+With\+Peg\+Command@{Align\+With\+Peg\+Command}}
+Inheritance diagram for Align\+With\+Peg\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_align_with_peg_command}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_align_with_peg_command_a8aaab261d5c6e5bbbd603378b900e0c1}\label{class_align_with_peg_command_a8aaab261d5c6e5bbbd603378b900e0c1}} 
+{\bfseries Align\+With\+Peg\+Command} (\hyperlink{class_robot_model}{Robot\+Model} $\ast$robot)
 \item 
 \mbox{\Hypertarget{class_align_with_peg_command_aec3a26a2f33ac872b551f8ae0e69016e}\label{class_align_with_peg_command_aec3a26a2f33ac872b551f8ae0e69016e}} 
 void {\bfseries Init} ()
 \item 
-\mbox{\Hypertarget{class_align_with_peg_command_a7ce545b54f2f30bc97c08af81a9e6f0f}\label{class_align_with_peg_command_a7ce545b54f2f30bc97c08af81a9e6f0f}} 
-void {\bfseries Update} ()
+\mbox{\Hypertarget{class_align_with_peg_command_a718e94b95fb192cf1e770e8af32dc616}\label{class_align_with_peg_command_a718e94b95fb192cf1e770e8af32dc616}} 
+void {\bfseries Update} (double curr\+Time\+Sec, double delta\+Time\+Sec)
+\item 
+\mbox{\Hypertarget{class_align_with_peg_command_a6f7b67c385b45154eef57703f242a4b3}\label{class_align_with_peg_command_a6f7b67c385b45154eef57703f242a4b3}} 
+void {\bfseries Refresh\+Ini} ()
+\item 
+\mbox{\Hypertarget{class_align_with_peg_command_aba9bae73047f3c752ab0e401dcb8eb77}\label{class_align_with_peg_command_aba9bae73047f3c752ab0e401dcb8eb77}} 
+bool {\bfseries Is\+Done} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_align_with_peg_command_ab5096cdc2f80ffc36ebad0f5e0705c00}\label{class_align_with_peg_command_ab5096cdc2f80ffc36ebad0f5e0705c00}} 
-zmq\+::context\+\_\+t $\ast$ {\bfseries context}
+\mbox{\Hypertarget{class_align_with_peg_command_ae4dda5f124199db08d86f12a66f0dc53}\label{class_align_with_peg_command_ae4dda5f124199db08d86f12a66f0dc53}} 
+zmq\+::context\+\_\+t $\ast$ {\bfseries context\+\_\+}
 \item 
-\mbox{\Hypertarget{class_align_with_peg_command_aac89315c2267bd36d021467a7ac0d775}\label{class_align_with_peg_command_aac89315c2267bd36d021467a7ac0d775}} 
-zmq\+::socket\+\_\+t $\ast$ {\bfseries subscriber}
+\mbox{\Hypertarget{class_align_with_peg_command_a0e3ef1a7681fc2eca54abeb93e2ab0f1}\label{class_align_with_peg_command_a0e3ef1a7681fc2eca54abeb93e2ab0f1}} 
+zmq\+::socket\+\_\+t $\ast$ {\bfseries subscriber\+\_\+}
+\item 
+\mbox{\Hypertarget{class_align_with_peg_command_a4c86bc111a4e2e150c86e944b1a87c57}\label{class_align_with_peg_command_a4c86bc111a4e2e150c86e944b1a87c57}} 
+\hyperlink{class_robot_model}{Robot\+Model} $\ast$ {\bfseries robot\+\_\+}
+\item 
+\mbox{\Hypertarget{class_align_with_peg_command_a1b6119efd05f41b8b06465562b72a987}\label{class_align_with_peg_command_a1b6119efd05f41b8b06465562b72a987}} 
+\hyperlink{class_pivot_command}{Pivot\+Command} $\ast$ {\bfseries pivot\+Command\+\_\+}
+\item 
+\mbox{\Hypertarget{class_align_with_peg_command_a4207f07a4128f397e949b329a6732615}\label{class_align_with_peg_command_a4207f07a4128f397e949b329a6732615}} 
+\hyperlink{class_navx_p_i_d_source}{Navx\+P\+I\+D\+Source} $\ast$ {\bfseries navx\+Source\+\_\+}
+\item 
+\mbox{\Hypertarget{class_align_with_peg_command_a99596205fd983a9a2818e85696abc6b6}\label{class_align_with_peg_command_a99596205fd983a9a2818e85696abc6b6}} 
+bool {\bfseries is\+Done\+\_\+}
+\item 
+\mbox{\Hypertarget{class_align_with_peg_command_a1d6286b2af4b1c7ad98c606af843cc21}\label{class_align_with_peg_command_a1d6286b2af4b1c7ad98c606af843cc21}} 
+bool {\bfseries pivot\+Command\+Is\+Done\+\_\+}
+\item 
+\mbox{\Hypertarget{class_align_with_peg_command_a4beed361052a45e507629ed5a4058105}\label{class_align_with_peg_command_a4beed361052a45e507629ed5a4058105}} 
+double {\bfseries pivot\+Delta\+Angle\+\_\+}
 \end{DoxyCompactItemize}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/maggiewang/\+Space\+\_\+\+Cookies/spacecookies/frc2017/src/\+Auto/\+Commands/Peg\+Align\+Command.\+h\item 
-/\+Users/maggiewang/\+Space\+\_\+\+Cookies/spacecookies/frc2017/src/\+Auto/\+Commands/Peg\+Align\+Command.\+cpp\end{DoxyCompactItemize}
+/\+Users/maggiewang/\+Space\+\_\+\+Cookies/spacecookies/frc2017/src/\+Auto/\+Commands/Align\+With\+Peg\+Command.\+h\item 
+/\+Users/maggiewang/\+Space\+\_\+\+Cookies/spacecookies/frc2017/src/\+Auto/\+Commands/Align\+With\+Peg\+Command.\+cpp\end{DoxyCompactItemize}

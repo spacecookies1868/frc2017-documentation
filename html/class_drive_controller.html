@@ -79,8 +79,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a166bb5ed50199d8482ebbc0e244742a1"><td class="memItemLeft" align="right" valign="top"><a id="a166bb5ed50199d8482ebbc0e244742a1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DriveController</b> (<a class="el" href="class_robot_model.html">RobotModel</a> *robot, <a class="el" href="class_control_board.html">ControlBoard</a> *humanControl)</td></tr>
+<tr class="memitem:a166bb5ed50199d8482ebbc0e244742a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drive_controller.html#a166bb5ed50199d8482ebbc0e244742a1">DriveController</a> (<a class="el" href="class_robot_model.html">RobotModel</a> *robot, <a class="el" href="class_control_board.html">ControlBoard</a> *humanControl)</td></tr>
 <tr class="separator:a166bb5ed50199d8482ebbc0e244742a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb1d02465d9feb19335db06c6d686552"><td class="memItemLeft" align="right" valign="top"><a id="afb1d02465d9feb19335db06c6d686552"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
@@ -91,11 +90,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupTrajectory</b> (
 <tr class="memitem:a80935e19c13c8f9212054af0183e53ad"><td class="memItemLeft" align="right" valign="top"><a id="a80935e19c13c8f9212054af0183e53ad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateMotionProfile</b> ()</td></tr>
 <tr class="separator:a80935e19c13c8f9212054af0183e53ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefc9e8cbe2948d2e72987e0a8a2cbf80"><td class="memItemLeft" align="right" valign="top"><a id="aefc9e8cbe2948d2e72987e0a8a2cbf80"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (double currTimeSec, double deltaTimeSec)</td></tr>
+<tr class="memitem:aefc9e8cbe2948d2e72987e0a8a2cbf80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drive_controller.html#aefc9e8cbe2948d2e72987e0a8a2cbf80">Update</a> (double currTimeSec, double deltaTimeSec)</td></tr>
 <tr class="separator:aefc9e8cbe2948d2e72987e0a8a2cbf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae07d828e9b1738bd0baf6dca46e5bd5c"><td class="memItemLeft" align="right" valign="top"><a id="ae07d828e9b1738bd0baf6dca46e5bd5c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDone</b> ()</td></tr>
+<tr class="memitem:ae07d828e9b1738bd0baf6dca46e5bd5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drive_controller.html#ae07d828e9b1738bd0baf6dca46e5bd5c">IsDone</a> ()</td></tr>
 <tr class="separator:ae07d828e9b1738bd0baf6dca46e5bd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbcf50b6d01eda0d1a45131dfeb97db8"><td class="memItemLeft" align="right" valign="top"><a id="abbcf50b6d01eda0d1a45131dfeb97db8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintDriveValues</b> ()</td></tr>
@@ -103,20 +100,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintDriveValues</b> 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a59d4b701fd83e101a3aaf9726fc626dd"><td class="memItemLeft" align="right" valign="top"><a id="a59d4b701fd83e101a3aaf9726fc626dd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ArcadeDrive</b> (double myX, double myY)</td></tr>
+<tr class="memitem:a59d4b701fd83e101a3aaf9726fc626dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drive_controller.html#a59d4b701fd83e101a3aaf9726fc626dd">ArcadeDrive</a> (double myX, double myY)</td></tr>
 <tr class="separator:a59d4b701fd83e101a3aaf9726fc626dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66ebb563f42372e249c8de422d74312b"><td class="memItemLeft" align="right" valign="top"><a id="a66ebb563f42372e249c8de422d74312b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>TankDrive</b> (double myLeft, double myRight)</td></tr>
-<tr class="separator:a66ebb563f42372e249c8de422d74312b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e9f778228ea2812b372fbb43fdf5a08"><td class="memItemLeft" align="right" valign="top"><a id="a3e9f778228ea2812b372fbb43fdf5a08"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>QuickTurn</b> (double myRight)</td></tr>
+<tr class="memitem:a93ed2c0196329dcbd6dd666f609ef487"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drive_controller.html#a93ed2c0196329dcbd6dd666f609ef487">TankDrive</a> (double Left, double Right)</td></tr>
+<tr class="separator:a93ed2c0196329dcbd6dd666f609ef487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e9f778228ea2812b372fbb43fdf5a08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drive_controller.html#a3e9f778228ea2812b372fbb43fdf5a08">QuickTurn</a> (double myRight)</td></tr>
 <tr class="separator:a3e9f778228ea2812b372fbb43fdf5a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeecbfd3643cadb19cc30af0f22c41c98"><td class="memItemLeft" align="right" valign="top"><a id="aeecbfd3643cadb19cc30af0f22c41c98"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>DriveDirection</b> ()</td></tr>
+<tr class="memitem:aeecbfd3643cadb19cc30af0f22c41c98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drive_controller.html#aeecbfd3643cadb19cc30af0f22c41c98">DriveDirection</a> ()</td></tr>
 <tr class="separator:aeecbfd3643cadb19cc30af0f22c41c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a001ab748cefcfdb9d4aa10b3cf699d53"><td class="memItemLeft" align="right" valign="top"><a id="a001ab748cefcfdb9d4aa10b3cf699d53"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDriveState</b> ()</td></tr>
+<tr class="memitem:a001ab748cefcfdb9d4aa10b3cf699d53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drive_controller.html#a001ab748cefcfdb9d4aa10b3cf699d53">GetDriveState</a> ()</td></tr>
 <tr class="separator:a001ab748cefcfdb9d4aa10b3cf699d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -137,6 +129,266 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>currState_</b></t
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nextState_</b></td></tr>
 <tr class="separator:abc8e83a004bdf2edd3b76aeb7d5b66d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a166bb5ed50199d8482ebbc0e244742a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a166bb5ed50199d8482ebbc0e244742a1">&#9670;&nbsp;</a></span>DriveController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DriveController::DriveController </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_robot_model.html">RobotModel</a> *&#160;</td>
+          <td class="paramname"><em>robot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_control_board.html">ControlBoard</a> *&#160;</td>
+          <td class="paramname"><em>humanControl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets state of robot and <a class="el" href="class_control_board.html">ControlBoard</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">robot</td><td>a <a class="el" href="class_robot_model.html">RobotModel</a> </td></tr>
+    <tr><td class="paramname">humanControl</td><td>a <a class="el" href="class_control_board.html">ControlBoard</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a59d4b701fd83e101a3aaf9726fc626dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d4b701fd83e101a3aaf9726fc626dd">&#9670;&nbsp;</a></span>ArcadeDrive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DriveController::ArcadeDrive </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>myX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>myY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Allows one joystick to make robot turn, while the other joystick alters speed and direction (forwards or backwards) of the robot. Does not allow maxOutput to be greater than 1.0 Does not allow robot to turn if thrust is less than 0.1 Does not allow robot to drive forwards/backwards if thrust is less than 0.2 </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">myX</td><td>a double rotate value </td></tr>
+    <tr><td class="paramname">myY</td><td>a double thrust value (forwards/backwards) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeecbfd3643cadb19cc30af0f22c41c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeecbfd3643cadb19cc30af0f22c41c98">&#9670;&nbsp;</a></span>DriveDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DriveController::DriveDirection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indicates direction of drive (forwards or backwards) </p>
+
+</div>
+</div>
+<a id="a001ab748cefcfdb9d4aa10b3cf699d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a001ab748cefcfdb9d4aa10b3cf699d53">&#9670;&nbsp;</a></span>GetDriveState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DriveController::GetDriveState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets current state of drive </p>
+
+</div>
+</div>
+<a id="ae07d828e9b1738bd0baf6dca46e5bd5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07d828e9b1738bd0baf6dca46e5bd5c">&#9670;&nbsp;</a></span>IsDone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DriveController::IsDone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>whether or not isDone is true, gets called in <a class="el" href="class_path_command.html">PathCommand</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3e9f778228ea2812b372fbb43fdf5a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e9f778228ea2812b372fbb43fdf5a08">&#9670;&nbsp;</a></span>QuickTurn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DriveController::QuickTurn </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>myRight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Allows robot to turn quickly, at sharp angle </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">myRight</td><td>a double allows robot to turn right or left </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a93ed2c0196329dcbd6dd666f609ef487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93ed2c0196329dcbd6dd666f609ef487">&#9670;&nbsp;</a></span>TankDrive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DriveController::TankDrive </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Left</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Right</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Senses how much each joystick is pushed and uses values to turn wheels </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Left</td><td>a double how much left joystick is pushed </td></tr>
+    <tr><td class="paramname">Right</td><td>a double how much right joystick is pushed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aefc9e8cbe2948d2e72987e0a8a2cbf80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc9e8cbe2948d2e72987e0a8a2cbf80">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DriveController::Update </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>currTimeSec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>deltaTimeSec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Updates joystick and button values from driver, also determines type of drive for robot to use </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currTimeSec</td><td>a double current time in seconds </td></tr>
+    <tr><td class="paramname">deltaTimeSec</td><td>a double </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/maggiewang/Space_Cookies/spacecookies/frc2017/src/Controllers/<a class="el" href="_drive_controller_8h_source.html">DriveController.h</a></li>
 <li>/Users/maggiewang/Space_Cookies/spacecookies/frc2017/src/Controllers/DriveController.cpp</li>

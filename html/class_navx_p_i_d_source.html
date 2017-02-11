@@ -77,17 +77,13 @@ Inheritance diagram for NavxPIDSource:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6d8910e49ac582970632e8ad20e9bc4b"><td class="memItemLeft" align="right" valign="top"><a id="a6d8910e49ac582970632e8ad20e9bc4b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NavxPIDSource</b> (<a class="el" href="class_robot_model.html">RobotModel</a> *robot)</td></tr>
+<tr class="memitem:a6d8910e49ac582970632e8ad20e9bc4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navx_p_i_d_source.html#a6d8910e49ac582970632e8ad20e9bc4b">NavxPIDSource</a> (<a class="el" href="class_robot_model.html">RobotModel</a> *robot)</td></tr>
 <tr class="separator:a6d8910e49ac582970632e8ad20e9bc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3d4863c8b9338340739bf0d85371827"><td class="memItemLeft" align="right" valign="top"><a id="af3d4863c8b9338340739bf0d85371827"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>PIDGet</b> ()</td></tr>
+<tr class="memitem:af3d4863c8b9338340739bf0d85371827"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navx_p_i_d_source.html#af3d4863c8b9338340739bf0d85371827">PIDGet</a> ()</td></tr>
 <tr class="separator:af3d4863c8b9338340739bf0d85371827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9a334ad2d3d561f4b7e0d4686a1e3c3"><td class="memItemLeft" align="right" valign="top"><a id="ac9a334ad2d3d561f4b7e0d4686a1e3c3"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateAccumulatedYaw</b> ()</td></tr>
+<tr class="memitem:ac9a334ad2d3d561f4b7e0d4686a1e3c3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navx_p_i_d_source.html#ac9a334ad2d3d561f4b7e0d4686a1e3c3">CalculateAccumulatedYaw</a> ()</td></tr>
 <tr class="separator:ac9a334ad2d3d561f4b7e0d4686a1e3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a553daca7b260429b4808791ff11ada54"><td class="memItemLeft" align="right" valign="top"><a id="a553daca7b260429b4808791ff11ada54"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetAccumulatedYaw</b> ()</td></tr>
+<tr class="memitem:a553daca7b260429b4808791ff11ada54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_navx_p_i_d_source.html#a553daca7b260429b4808791ff11ada54">ResetAccumulatedYaw</a> ()</td></tr>
 <tr class="separator:a553daca7b260429b4808791ff11ada54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -108,6 +104,86 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>accumulatedYaw_</b>
 <a class="el" href="class_robot_model.html">RobotModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>robot_</b></td></tr>
 <tr class="separator:aaf8ac0b9fdad1ee64788ea7b50acc388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6d8910e49ac582970632e8ad20e9bc4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8910e49ac582970632e8ad20e9bc4b">&#9670;&nbsp;</a></span>NavxPIDSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NavxPIDSource::NavxPIDSource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_robot_model.html">RobotModel</a> *&#160;</td>
+          <td class="paramname"><em>robot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Assigns robot and also resets accumulated yaw </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">robot</td><td>a <a class="el" href="class_robot_model.html">RobotModel</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac9a334ad2d3d561f4b7e0d4686a1e3c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a334ad2d3d561f4b7e0d4686a1e3c3">&#9670;&nbsp;</a></span>CalculateAccumulatedYaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NavxPIDSource::CalculateAccumulatedYaw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Updates currYaw, calculates deltaYaw, calculates accumulatedYaw. </p><dl class="section return"><dt>Returns</dt><dd>AccumulatedYaw </dd></dl>
+
+</div>
+</div>
+<a id="af3d4863c8b9338340739bf0d85371827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d4863c8b9338340739bf0d85371827">&#9670;&nbsp;</a></span>PIDGet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NavxPIDSource::PIDGet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calculates and returns AccumulatedYaw </p><dl class="section return"><dt>Returns</dt><dd>AccumulatedYaw </dd></dl>
+
+</div>
+</div>
+<a id="a553daca7b260429b4808791ff11ada54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a553daca7b260429b4808791ff11ada54">&#9670;&nbsp;</a></span>ResetAccumulatedYaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NavxPIDSource::ResetAccumulatedYaw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets AccumulatedYaw and deltaYaw to zero and updates currYaw and lastYaw </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/maggiewang/Space_Cookies/spacecookies/frc2017/src/Auto/<a class="el" href="_p_i_d_input_source_8h_source.html">PIDInputSource.h</a></li>
 <li>/Users/maggiewang/Space_Cookies/spacecookies/frc2017/src/Auto/PIDInputSource.cpp</li>

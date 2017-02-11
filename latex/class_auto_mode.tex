@@ -15,11 +15,12 @@ virtual void {\bfseries Create\+Queue} ()=0
 \mbox{\Hypertarget{class_auto_mode_ae30ad1e90a36975db5b1bd6d0d764408}\label{class_auto_mode_ae30ad1e90a36975db5b1bd6d0d764408}} 
 virtual void {\bfseries Init} ()=0
 \item 
-\mbox{\Hypertarget{class_auto_mode_af5eb2f835e2712588986ca8fd9a8735a}\label{class_auto_mode_af5eb2f835e2712588986ca8fd9a8735a}} 
-void {\bfseries Update} (double curr\+Time\+Sec, double delta\+Time\+Sec)
+void \hyperlink{class_auto_mode_af5eb2f835e2712588986ca8fd9a8735a}{Update} (double curr\+Time\+Sec, double delta\+Time\+Sec)
 \item 
-\mbox{\Hypertarget{class_auto_mode_a6f734a1af959e284fced7666e397bf65}\label{class_auto_mode_a6f734a1af959e284fced7666e397bf65}} 
-bool {\bfseries Is\+Done} ()
+\mbox{\Hypertarget{class_auto_mode_acb6a8d7e9e3635dd1d0af27297fe045f}\label{class_auto_mode_acb6a8d7e9e3635dd1d0af27297fe045f}} 
+virtual void {\bfseries Refresh\+Ini} ()=0
+\item 
+bool \hyperlink{class_auto_mode_a6f734a1af959e284fced7666e397bf65}{Is\+Done} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -27,6 +28,31 @@ bool {\bfseries Is\+Done} ()
 \mbox{\Hypertarget{class_auto_mode_acaf4e4b36bbc309c6fae4cdac56b38d3}\label{class_auto_mode_acaf4e4b36bbc309c6fae4cdac56b38d3}} 
 \hyperlink{class_auto_command}{Auto\+Command} $\ast$ {\bfseries current\+Command}
 \end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_auto_mode_a6f734a1af959e284fced7666e397bf65}\label{class_auto_mode_a6f734a1af959e284fced7666e397bf65}} 
+\index{Auto\+Mode@{Auto\+Mode}!Is\+Done@{Is\+Done}}
+\index{Is\+Done@{Is\+Done}!Auto\+Mode@{Auto\+Mode}}
+\subsubsection{\texorpdfstring{Is\+Done()}{IsDone()}}
+{\footnotesize\ttfamily bool Auto\+Mode\+::\+Is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns when \hyperlink{class_auto_mode}{Auto\+Mode} is done \begin{DoxyReturn}{Returns}
+true if there is no current command or current command is N\+U\+LL 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_auto_mode_af5eb2f835e2712588986ca8fd9a8735a}\label{class_auto_mode_af5eb2f835e2712588986ca8fd9a8735a}} 
+\index{Auto\+Mode@{Auto\+Mode}!Update@{Update}}
+\index{Update@{Update}!Auto\+Mode@{Auto\+Mode}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Auto\+Mode\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{curr\+Time\+Sec,  }\item[{double}]{delta\+Time\+Sec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Updates the current command and prints out if each command is complete and also if the automode update is finished 
+\begin{DoxyParams}{Parameters}
+{\em curr\+Time\+Sec} & a double current time \\
+\hline
+{\em delta\+Time\+Sec} & a double how often to update \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

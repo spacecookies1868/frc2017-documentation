@@ -3,26 +3,26 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_auto_controller_a8fddf9163735e6fc44572e9f59116084}\label{class_auto_controller_a8fddf9163735e6fc44572e9f59116084}} 
-{\bfseries Auto\+Controller} (\hyperlink{class_auto_mode}{Auto\+Mode} $\ast$auto\+Mode)
+\hyperlink{class_auto_controller_aaa1564aeb5d8577d7d8e973daedfd3ae}{Auto\+Controller} ()
 \item 
-\mbox{\Hypertarget{class_auto_controller_a8bb1c3117bf7e528c73e4d3edd49d0ba}\label{class_auto_controller_a8bb1c3117bf7e528c73e4d3edd49d0ba}} 
-void {\bfseries Set\+Autonomous\+Mode} (\hyperlink{class_auto_mode}{Auto\+Mode} $\ast$auto\+Mode)
+\hyperlink{class_auto_controller_a8fddf9163735e6fc44572e9f59116084}{Auto\+Controller} (\hyperlink{class_auto_mode}{Auto\+Mode} $\ast$auto\+Mode)
+\item 
+void \hyperlink{class_auto_controller_a8bb1c3117bf7e528c73e4d3edd49d0ba}{Set\+Autonomous\+Mode} (\hyperlink{class_auto_mode}{Auto\+Mode} $\ast$auto\+Mode)
 \item 
 \mbox{\Hypertarget{class_auto_controller_a86c89bedf59d9746d729dead3368460f}\label{class_auto_controller_a86c89bedf59d9746d729dead3368460f}} 
 void {\bfseries Start\+Autonomous} ()
 \item 
-\mbox{\Hypertarget{class_auto_controller_a8b7b16e449078e1818b4bc302f97da07}\label{class_auto_controller_a8b7b16e449078e1818b4bc302f97da07}} 
-void {\bfseries Init} ()
+void \hyperlink{class_auto_controller_a8b7b16e449078e1818b4bc302f97da07}{Init} ()
 \item 
-\mbox{\Hypertarget{class_auto_controller_a733fa15c9d374adcb458b0d6f0890910}\label{class_auto_controller_a733fa15c9d374adcb458b0d6f0890910}} 
-void {\bfseries Update} (double curr\+Time\+Sec, double delta\+Time\+Sec)
+void \hyperlink{class_auto_controller_a733fa15c9d374adcb458b0d6f0890910}{Update} (double curr\+Time\+Sec, double delta\+Time\+Sec)
 \item 
 \mbox{\Hypertarget{class_auto_controller_a58a880e7fdce5953714c3a1d70f49eac}\label{class_auto_controller_a58a880e7fdce5953714c3a1d70f49eac}} 
 void {\bfseries Reset} ()
 \item 
-\mbox{\Hypertarget{class_auto_controller_a692f9395f78cb214ed7c410505686334}\label{class_auto_controller_a692f9395f78cb214ed7c410505686334}} 
-bool {\bfseries Is\+Done} ()
+\mbox{\Hypertarget{class_auto_controller_a6e3477125ee0e9f2658d88b3d856cd88}\label{class_auto_controller_a6e3477125ee0e9f2658d88b3d856cd88}} 
+void {\bfseries Refresh\+Ini} ()
+\item 
+bool \hyperlink{class_auto_controller_a692f9395f78cb214ed7c410505686334}{Is\+Done} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -30,6 +30,68 @@ bool {\bfseries Is\+Done} ()
 \mbox{\Hypertarget{class_auto_controller_a85f5b014c905fe3ac77e3024ad1ebe56}\label{class_auto_controller_a85f5b014c905fe3ac77e3024ad1ebe56}} 
 \hyperlink{class_auto_mode}{Auto\+Mode} $\ast$ {\bfseries auto\+Mode}
 \end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_auto_controller_aaa1564aeb5d8577d7d8e973daedfd3ae}\label{class_auto_controller_aaa1564aeb5d8577d7d8e973daedfd3ae}} 
+\index{Auto\+Controller@{Auto\+Controller}!Auto\+Controller@{Auto\+Controller}}
+\index{Auto\+Controller@{Auto\+Controller}!Auto\+Controller@{Auto\+Controller}}
+\subsubsection{\texorpdfstring{Auto\+Controller()}{AutoController()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Auto\+Controller\+::\+Auto\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor \hyperlink{class_auto_controller}{Auto\+Controller} that does not set \hyperlink{class_auto_mode}{Auto\+Mode} \mbox{\Hypertarget{class_auto_controller_a8fddf9163735e6fc44572e9f59116084}\label{class_auto_controller_a8fddf9163735e6fc44572e9f59116084}} 
+\index{Auto\+Controller@{Auto\+Controller}!Auto\+Controller@{Auto\+Controller}}
+\index{Auto\+Controller@{Auto\+Controller}!Auto\+Controller@{Auto\+Controller}}
+\subsubsection{\texorpdfstring{Auto\+Controller()}{AutoController()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Auto\+Controller\+::\+Auto\+Controller (\begin{DoxyParamCaption}\item[{\hyperlink{class_auto_mode}{Auto\+Mode} $\ast$}]{auto\+Mode }\end{DoxyParamCaption})}
+
+Constructor \hyperlink{class_auto_controller}{Auto\+Controller} that allows \hyperlink{class_auto_mode}{Auto\+Mode} to be set 
+\begin{DoxyParams}{Parameters}
+{\em auto\+Mode} & an \hyperlink{class_auto_mode}{Auto\+Mode} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_auto_controller_a8b7b16e449078e1818b4bc302f97da07}\label{class_auto_controller_a8b7b16e449078e1818b4bc302f97da07}} 
+\index{Auto\+Controller@{Auto\+Controller}!Init@{Init}}
+\index{Init@{Init}!Auto\+Controller@{Auto\+Controller}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Auto\+Controller\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+create a queue for automode and initializes it \mbox{\Hypertarget{class_auto_controller_a692f9395f78cb214ed7c410505686334}\label{class_auto_controller_a692f9395f78cb214ed7c410505686334}} 
+\index{Auto\+Controller@{Auto\+Controller}!Is\+Done@{Is\+Done}}
+\index{Is\+Done@{Is\+Done}!Auto\+Controller@{Auto\+Controller}}
+\subsubsection{\texorpdfstring{Is\+Done()}{IsDone()}}
+{\footnotesize\ttfamily bool Auto\+Controller\+::\+Is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true when \hyperlink{class_auto_mode}{Auto\+Mode} is\+Done 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_auto_controller_a8bb1c3117bf7e528c73e4d3edd49d0ba}\label{class_auto_controller_a8bb1c3117bf7e528c73e4d3edd49d0ba}} 
+\index{Auto\+Controller@{Auto\+Controller}!Set\+Autonomous\+Mode@{Set\+Autonomous\+Mode}}
+\index{Set\+Autonomous\+Mode@{Set\+Autonomous\+Mode}!Auto\+Controller@{Auto\+Controller}}
+\subsubsection{\texorpdfstring{Set\+Autonomous\+Mode()}{SetAutonomousMode()}}
+{\footnotesize\ttfamily void Auto\+Controller\+::\+Set\+Autonomous\+Mode (\begin{DoxyParamCaption}\item[{\hyperlink{class_auto_mode}{Auto\+Mode} $\ast$}]{auto\+Mode }\end{DoxyParamCaption})}
+
+Set\+Automous\+Mode is a mutator that sets \hyperlink{class_auto_mode}{Auto\+Mode} 
+\begin{DoxyParams}{Parameters}
+{\em auto\+Mode} & is an \hyperlink{class_auto_mode}{Auto\+Mode} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_auto_controller_a733fa15c9d374adcb458b0d6f0890910}\label{class_auto_controller_a733fa15c9d374adcb458b0d6f0890910}} 
+\index{Auto\+Controller@{Auto\+Controller}!Update@{Update}}
+\index{Update@{Update}!Auto\+Controller@{Auto\+Controller}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Auto\+Controller\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{curr\+Time\+Sec,  }\item[{double}]{delta\+Time\+Sec }\end{DoxyParamCaption})}
+
+Updates automode 
+\begin{DoxyParams}{Parameters}
+{\em curr\+Time\+Sec} & a double that is the current time in seconds \\
+\hline
+{\em delta\+Time\+Sec} & a double that is the change in time \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

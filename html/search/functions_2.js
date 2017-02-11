@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['periodictask',['PeriodicTask',['../class_motion_profile_executor.html#a6599521948ebfd609d9b4c53539f597f',1,'MotionProfileExecutor']]],
-  ['process',['Process',['../classinstrumentation.html#a0e96d2ff2bcd277f57dd1faca76c28b2',1,'instrumentation']]]
+  ['drivecontroller',['DriveController',['../class_drive_controller.html#a166bb5ed50199d8482ebbc0e244742a1',1,'DriveController']]],
+  ['drivedirection',['DriveDirection',['../class_drive_controller.html#aeecbfd3643cadb19cc30af0f22c41c98',1,'DriveController']]]
 ];
