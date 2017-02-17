@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['navxpidsource',['NavxPIDSource',['../class_navx_p_i_d_source.html',1,'']]]
+  ['mainprogram',['MainProgram',['../class_main_program.html',1,'']]],
+  ['motionprofile',['MotionProfile',['../class_motion_profile.html',1,'']]],
+  ['motionprofileexecutor',['MotionProfileExecutor',['../class_motion_profile_executor.html',1,'']]]
 ];

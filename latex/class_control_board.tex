@@ -9,23 +9,28 @@ Inheritance diagram for Control\+Board\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_control_board_abc38ec1feb7a7c38adfe7ced04fc5a79}\label{class_control_board_abc38ec1feb7a7c38adfe7ced04fc5a79}} 
-void {\bfseries Read\+Controls} ()
+\hyperlink{class_control_board_abb5d54833e99fb1b46a51e61c6f18e6e}{Control\+Board} ()
 \item 
-\mbox{\Hypertarget{class_control_board_a82d4f6abff67ad0ba60b263d65fcc924}\label{class_control_board_a82d4f6abff67ad0ba60b263d65fcc924}} 
-double {\bfseries Get\+Joystick\+Value} (Joysticks j, Axes a)
+void \hyperlink{class_control_board_abc38ec1feb7a7c38adfe7ced04fc5a79}{Read\+Controls} ()
 \item 
-\mbox{\Hypertarget{class_control_board_a53f6a067fdec6785017465dba9ee2be6}\label{class_control_board_a53f6a067fdec6785017465dba9ee2be6}} 
-bool {\bfseries Get\+Reverse\+Drive\+Desired} ()
+double \hyperlink{class_control_board_a82d4f6abff67ad0ba60b263d65fcc924}{Get\+Joystick\+Value} (Joysticks j, Axes a)
 \item 
-\mbox{\Hypertarget{class_control_board_a49f9d98f58c8f8eb8030910c27b187ed}\label{class_control_board_a49f9d98f58c8f8eb8030910c27b187ed}} 
-bool {\bfseries Get\+Gear\+Shift\+Desired} ()
+bool \hyperlink{class_control_board_a53f6a067fdec6785017465dba9ee2be6}{Get\+Reverse\+Drive\+Desired} ()
 \item 
-\mbox{\Hypertarget{class_control_board_ab32a6888112f807dff75acbb641a3517}\label{class_control_board_ab32a6888112f807dff75acbb641a3517}} 
-bool {\bfseries Get\+Arcade\+Drive\+Desired} ()
+bool \hyperlink{class_control_board_a49f9d98f58c8f8eb8030910c27b187ed}{Get\+Gear\+Shift\+Desired} ()
 \item 
-\mbox{\Hypertarget{class_control_board_ac43151ba49812cc42028c957506a4cc4}\label{class_control_board_ac43151ba49812cc42028c957506a4cc4}} 
-bool {\bfseries Get\+Quick\+Turn\+Desired} ()
+bool \hyperlink{class_control_board_ab32a6888112f807dff75acbb641a3517}{Get\+Arcade\+Drive\+Desired} ()
+\item 
+bool \hyperlink{class_control_board_ac43151ba49812cc42028c957506a4cc4}{Get\+Quick\+Turn\+Desired} ()
+\item 
+\mbox{\Hypertarget{class_control_board_aec381ec9f1fc6986e19c2c74a71aae48}\label{class_control_board_aec381ec9f1fc6986e19c2c74a71aae48}} 
+bool {\bfseries Get\+Flywheel\+Desired} ()
+\item 
+\mbox{\Hypertarget{class_control_board_a6de85782a631c929f4deb4de8b342349}\label{class_control_board_a6de85782a631c929f4deb4de8b342349}} 
+bool {\bfseries Get\+Intake\+Desired} ()
+\item 
+\mbox{\Hypertarget{class_control_board_a8e52dce04f1779134628992f860c3a3a}\label{class_control_board_a8e52dce04f1779134628992f860c3a3a}} 
+bool {\bfseries Get\+Climber\+Desired} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -60,6 +65,15 @@ bool {\bfseries arcade\+Drive\+Desired\+\_\+}
 \mbox{\Hypertarget{class_control_board_a59b412d2fab63ecd421419bec6710d5d}\label{class_control_board_a59b412d2fab63ecd421419bec6710d5d}} 
 bool {\bfseries quick\+Turn\+Desired\+\_\+}
 \item 
+\mbox{\Hypertarget{class_control_board_ace46bbe5d2b458624c1a2135a02d06d9}\label{class_control_board_ace46bbe5d2b458624c1a2135a02d06d9}} 
+bool {\bfseries flywheel\+Desired\+\_\+}
+\item 
+\mbox{\Hypertarget{class_control_board_afa89e54b0d665f1771d8fb5696084717}\label{class_control_board_afa89e54b0d665f1771d8fb5696084717}} 
+bool {\bfseries intake\+Desired\+\_\+}
+\item 
+\mbox{\Hypertarget{class_control_board_af281e9e8f8d597b03b2522bd6c2176aa}\label{class_control_board_af281e9e8f8d597b03b2522bd6c2176aa}} 
+bool {\bfseries climber\+Desired\+\_\+}
+\item 
 \mbox{\Hypertarget{class_control_board_a3d1d2b17bf6a2290271d6fba94fb20e2}\label{class_control_board_a3d1d2b17bf6a2290271d6fba94fb20e2}} 
 Joystick $\ast$ {\bfseries left\+Joy\+\_\+}
 \item 
@@ -83,8 +97,108 @@ Joystick $\ast$ {\bfseries operator\+Joy\+B\+\_\+}
 \item 
 \mbox{\Hypertarget{class_control_board_a7f00556cbd9514ab50e79fd202187b27}\label{class_control_board_a7f00556cbd9514ab50e79fd202187b27}} 
 \hyperlink{class_button_reader}{Button\+Reader} $\ast$ {\bfseries quick\+Turn\+Button}
+\item 
+\mbox{\Hypertarget{class_control_board_ad6747a734d4ed1fca913d2780fd232d7}\label{class_control_board_ad6747a734d4ed1fca913d2780fd232d7}} 
+\hyperlink{class_button_reader}{Button\+Reader} $\ast$ {\bfseries flywheel\+Switch\+\_\+}
+\item 
+\mbox{\Hypertarget{class_control_board_afed51d92de45c22e8e5dd1a8185fdd43}\label{class_control_board_afed51d92de45c22e8e5dd1a8185fdd43}} 
+\hyperlink{class_button_reader}{Button\+Reader} $\ast$ {\bfseries intake\+Button\+\_\+}
+\item 
+\mbox{\Hypertarget{class_control_board_a9a746d864f38612942a1fa913d884f3d}\label{class_control_board_a9a746d864f38612942a1fa913d884f3d}} 
+\hyperlink{class_button_reader}{Button\+Reader} $\ast$ {\bfseries climber\+Button\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_control_board_abb5d54833e99fb1b46a51e61c6f18e6e}\label{class_control_board_abb5d54833e99fb1b46a51e61c6f18e6e}} 
+\index{Control\+Board@{Control\+Board}!Control\+Board@{Control\+Board}}
+\index{Control\+Board@{Control\+Board}!Control\+Board@{Control\+Board}}
+\subsubsection{\texorpdfstring{Control\+Board()}{ControlBoard()}}
+{\footnotesize\ttfamily Control\+Board\+::\+Control\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets left\+Joy\+\_\+, right\+Joy\+\_\+, operator\+Joy\+\_\+, operator\+Joy\+B\+\_\+ Initializes driv\+Direction\+Button, gear\+Shift\+Button, arcade\+Drive\+Button, quick\+Turn\+Button Sets reverse\+Drive\+Desired\+\_\+, gear\+Shift\+Desired\+\_\+, arcade\+Drive\+Desired\+\_\+, quick\+Turn\+Desired\+\_\+ to false 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_control_board_ab32a6888112f807dff75acbb641a3517}\label{class_control_board_ab32a6888112f807dff75acbb641a3517}} 
+\index{Control\+Board@{Control\+Board}!Get\+Arcade\+Drive\+Desired@{Get\+Arcade\+Drive\+Desired}}
+\index{Get\+Arcade\+Drive\+Desired@{Get\+Arcade\+Drive\+Desired}!Control\+Board@{Control\+Board}}
+\subsubsection{\texorpdfstring{Get\+Arcade\+Drive\+Desired()}{GetArcadeDriveDesired()}}
+{\footnotesize\ttfamily bool Control\+Board\+::\+Get\+Arcade\+Drive\+Desired (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+true if arcade drive is desired 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_remote_control}{Remote\+Control}.
+
+\mbox{\Hypertarget{class_control_board_a49f9d98f58c8f8eb8030910c27b187ed}\label{class_control_board_a49f9d98f58c8f8eb8030910c27b187ed}} 
+\index{Control\+Board@{Control\+Board}!Get\+Gear\+Shift\+Desired@{Get\+Gear\+Shift\+Desired}}
+\index{Get\+Gear\+Shift\+Desired@{Get\+Gear\+Shift\+Desired}!Control\+Board@{Control\+Board}}
+\subsubsection{\texorpdfstring{Get\+Gear\+Shift\+Desired()}{GetGearShiftDesired()}}
+{\footnotesize\ttfamily bool Control\+Board\+::\+Get\+Gear\+Shift\+Desired (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+true if gear shift is desired 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_remote_control}{Remote\+Control}.
+
+\mbox{\Hypertarget{class_control_board_a82d4f6abff67ad0ba60b263d65fcc924}\label{class_control_board_a82d4f6abff67ad0ba60b263d65fcc924}} 
+\index{Control\+Board@{Control\+Board}!Get\+Joystick\+Value@{Get\+Joystick\+Value}}
+\index{Get\+Joystick\+Value@{Get\+Joystick\+Value}!Control\+Board@{Control\+Board}}
+\subsubsection{\texorpdfstring{Get\+Joystick\+Value()}{GetJoystickValue()}}
+{\footnotesize\ttfamily double Control\+Board\+::\+Get\+Joystick\+Value (\begin{DoxyParamCaption}\item[{Joysticks}]{j,  }\item[{Axes}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+returns right\+Joy\+\_\+ and left\+Joy\+\_\+ values 
+\begin{DoxyParams}{Parameters}
+{\em j} & a Joystick \\
+\hline
+{\em a} & a Axes \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_remote_control}{Remote\+Control}.
+
+\mbox{\Hypertarget{class_control_board_ac43151ba49812cc42028c957506a4cc4}\label{class_control_board_ac43151ba49812cc42028c957506a4cc4}} 
+\index{Control\+Board@{Control\+Board}!Get\+Quick\+Turn\+Desired@{Get\+Quick\+Turn\+Desired}}
+\index{Get\+Quick\+Turn\+Desired@{Get\+Quick\+Turn\+Desired}!Control\+Board@{Control\+Board}}
+\subsubsection{\texorpdfstring{Get\+Quick\+Turn\+Desired()}{GetQuickTurnDesired()}}
+{\footnotesize\ttfamily bool Control\+Board\+::\+Get\+Quick\+Turn\+Desired (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+true if quick turn is desired 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_remote_control}{Remote\+Control}.
+
+\mbox{\Hypertarget{class_control_board_a53f6a067fdec6785017465dba9ee2be6}\label{class_control_board_a53f6a067fdec6785017465dba9ee2be6}} 
+\index{Control\+Board@{Control\+Board}!Get\+Reverse\+Drive\+Desired@{Get\+Reverse\+Drive\+Desired}}
+\index{Get\+Reverse\+Drive\+Desired@{Get\+Reverse\+Drive\+Desired}!Control\+Board@{Control\+Board}}
+\subsubsection{\texorpdfstring{Get\+Reverse\+Drive\+Desired()}{GetReverseDriveDesired()}}
+{\footnotesize\ttfamily bool Control\+Board\+::\+Get\+Reverse\+Drive\+Desired (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+true if reserve\+Drive\+Desired\+\_\+ 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_remote_control}{Remote\+Control}.
+
+\mbox{\Hypertarget{class_control_board_abc38ec1feb7a7c38adfe7ced04fc5a79}\label{class_control_board_abc38ec1feb7a7c38adfe7ced04fc5a79}} 
+\index{Control\+Board@{Control\+Board}!Read\+Controls@{Read\+Controls}}
+\index{Read\+Controls@{Read\+Controls}!Control\+Board@{Control\+Board}}
+\subsubsection{\texorpdfstring{Read\+Controls()}{ReadControls()}}
+{\footnotesize\ttfamily void Control\+Board\+::\+Read\+Controls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets left\+Joy\+X\+\_\+, left\+Joy\+Y\+\_\+, right\+Joy\+X\+\_\+, right\+Joy\+Y\+\_\+ Sets reverse\+Drive\+Desired\+\_\+, gear\+Shift\+Desired\+\_\+, arcade\+Drive\+Desired\+\_\+, quick\+Turn\+Desired\+\_\+ 
+
+Implements \hyperlink{class_remote_control}{Remote\+Control}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

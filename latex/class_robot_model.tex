@@ -42,6 +42,12 @@ void {\bfseries Clear\+Motion\+Profile\+Trajectories} ()
 \mbox{\Hypertarget{class_robot_model_a79245b48351252c90a9ff994e9b40ebb}\label{class_robot_model_a79245b48351252c90a9ff994e9b40ebb}} 
 double {\bfseries Get\+Drive\+Encoder\+Value} (Wheels wheel)
 \item 
+\mbox{\Hypertarget{class_robot_model_a4fb9600c4ba5dc1594cd703bcc069683}\label{class_robot_model_a4fb9600c4ba5dc1594cd703bcc069683}} 
+double {\bfseries Get\+Left\+Distance} ()
+\item 
+\mbox{\Hypertarget{class_robot_model_acb69c744e99d5c938f983bf6da66f6f9}\label{class_robot_model_acb69c744e99d5c938f983bf6da66f6f9}} 
+double {\bfseries Get\+Right\+Distance} ()
+\item 
 \mbox{\Hypertarget{class_robot_model_a48702daa83b141eb0dd1dc6f0fd75c35}\label{class_robot_model_a48702daa83b141eb0dd1dc6f0fd75c35}} 
 double {\bfseries Get\+Navx\+Yaw} ()
 \item 
@@ -50,6 +56,36 @@ void {\bfseries Zero\+Navx\+Yaw} ()
 \item 
 \mbox{\Hypertarget{class_robot_model_a3f5ac4f1f526f4610573fc3dbcdc722c}\label{class_robot_model_a3f5ac4f1f526f4610573fc3dbcdc722c}} 
 void {\bfseries Refresh\+Ini} ()
+\item 
+\mbox{\Hypertarget{class_robot_model_a66eb15697284c9f84e81274c42074f98}\label{class_robot_model_a66eb15697284c9f84e81274c42074f98}} 
+double {\bfseries Get\+Feeder\+Output} ()
+\item 
+\mbox{\Hypertarget{class_robot_model_a60b4ba0082d91ec75d49584532ce17d5}\label{class_robot_model_a60b4ba0082d91ec75d49584532ce17d5}} 
+void {\bfseries Set\+Feeder\+Output} (double output)
+\item 
+\mbox{\Hypertarget{class_robot_model_a83cf79ec3a2c2f89846bbc8f1371d061}\label{class_robot_model_a83cf79ec3a2c2f89846bbc8f1371d061}} 
+double {\bfseries Get\+Climber\+Output} ()
+\item 
+\mbox{\Hypertarget{class_robot_model_a3c3562ec10706ee53e7d304c7f69e136}\label{class_robot_model_a3c3562ec10706ee53e7d304c7f69e136}} 
+void {\bfseries Set\+Climber\+Output} (double output)
+\item 
+\mbox{\Hypertarget{class_robot_model_a08ca5e903c521ab19e40dc7ab34ccf16}\label{class_robot_model_a08ca5e903c521ab19e40dc7ab34ccf16}} 
+Encoder $\ast$ {\bfseries Get\+Flywheel\+Encoder} ()
+\item 
+\mbox{\Hypertarget{class_robot_model_a421afc34c2fa51b2d4a0fb26d0115e0a}\label{class_robot_model_a421afc34c2fa51b2d4a0fb26d0115e0a}} 
+Encoder $\ast$ {\bfseries Get\+Intake\+Encoder} ()
+\item 
+\mbox{\Hypertarget{class_robot_model_a2a91026e2bbd046d355c2619990ac537}\label{class_robot_model_a2a91026e2bbd046d355c2619990ac537}} 
+Victor $\ast$ {\bfseries Get\+Flywheel\+Motor} ()
+\item 
+\mbox{\Hypertarget{class_robot_model_a2e186d42b8fcbee137e01072dbd160a1}\label{class_robot_model_a2e186d42b8fcbee137e01072dbd160a1}} 
+Victor $\ast$ {\bfseries Get\+Intake\+Motor} ()
+\item 
+\mbox{\Hypertarget{class_robot_model_a87b1558491f004d77a0d5fd308cae225}\label{class_robot_model_a87b1558491f004d77a0d5fd308cae225}} 
+bool {\bfseries Get\+Gear\+In\+Robot} ()
+\item 
+\mbox{\Hypertarget{class_robot_model_af4fb53182642778b932b510fe2b9bec1}\label{class_robot_model_af4fb53182642778b932b510fe2b9bec1}} 
+void {\bfseries Set\+Gear\+In\+Robot} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -77,6 +113,36 @@ Timer $\ast$ {\bfseries timer\+\_\+}
 \item 
 \mbox{\Hypertarget{class_robot_model_a06263c46912cfbab7480fe2395b63533}\label{class_robot_model_a06263c46912cfbab7480fe2395b63533}} 
 A\+H\+RS $\ast$ {\bfseries navx\+\_\+}
+\item 
+\mbox{\Hypertarget{class_robot_model_ab9b5558c4072324457b14576f5872b4f}\label{class_robot_model_ab9b5558c4072324457b14576f5872b4f}} 
+Victor $\ast$ {\bfseries flywheel\+Motor\+\_\+}
+\item 
+\mbox{\Hypertarget{class_robot_model_a19625da2ddd30fe3845f9469c7cefa2f}\label{class_robot_model_a19625da2ddd30fe3845f9469c7cefa2f}} 
+Victor $\ast$ {\bfseries feeder\+Motor\+\_\+}
+\item 
+\mbox{\Hypertarget{class_robot_model_a1175bef126654e191cea58b2bf1dfc12}\label{class_robot_model_a1175bef126654e191cea58b2bf1dfc12}} 
+Victor $\ast$ {\bfseries climber\+Motor\+\_\+}
+\item 
+\mbox{\Hypertarget{class_robot_model_a57b5c47e3f7f44f04b4990eeb9f6b2e3}\label{class_robot_model_a57b5c47e3f7f44f04b4990eeb9f6b2e3}} 
+Victor $\ast$ {\bfseries intake\+Motor\+\_\+}
+\item 
+\mbox{\Hypertarget{class_robot_model_a85bf77e0ca831ebeb88e72cc61924310}\label{class_robot_model_a85bf77e0ca831ebeb88e72cc61924310}} 
+Encoder $\ast$ {\bfseries intake\+Encoder\+\_\+}
+\item 
+\mbox{\Hypertarget{class_robot_model_ad825a54887c6faceb61b1ea2829ae806}\label{class_robot_model_ad825a54887c6faceb61b1ea2829ae806}} 
+Encoder $\ast$ {\bfseries flywheel\+Encoder\+\_\+}
+\item 
+\mbox{\Hypertarget{class_robot_model_ab64d25c6edb57084133986bfae47d009}\label{class_robot_model_ab64d25c6edb57084133986bfae47d009}} 
+Digital\+Input $\ast$ {\bfseries distance\+Sensor\+\_\+}
+\item 
+\mbox{\Hypertarget{class_robot_model_a35d37024b490ed02d18b6e030e89dcab}\label{class_robot_model_a35d37024b490ed02d18b6e030e89dcab}} 
+bool {\bfseries gear\+In\+Robot\+\_\+}
+\item 
+\mbox{\Hypertarget{class_robot_model_aadc1e36f0ab0494406161d2d3aee5ed0}\label{class_robot_model_aadc1e36f0ab0494406161d2d3aee5ed0}} 
+bool {\bfseries dist\+Sensor\+Curr\+\_\+}
+\item 
+\mbox{\Hypertarget{class_robot_model_a73bb1bc2526b11d01b4824ede01463d8}\label{class_robot_model_a73bb1bc2526b11d01b4824ede01463d8}} 
+bool {\bfseries dist\+Sensor\+Last\+\_\+}
 \end{DoxyCompactItemize}
 
 

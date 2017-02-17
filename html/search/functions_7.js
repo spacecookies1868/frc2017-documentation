@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quickturn',['QuickTurn',['../class_drive_controller.html#a3e9f778228ea2812b372fbb43fdf5a08',1,'DriveController']]]
+  ['onegearmode',['OneGearMode',['../class_one_gear_mode.html#a738b0127f542fb89c5a5976e534b6ef9',1,'OneGearMode']]]
 ];

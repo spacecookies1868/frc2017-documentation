@@ -60,6 +60,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_align_with_peg_command-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -78,14 +79,11 @@ Inheritance diagram for AlignWithPegCommand:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8aaab261d5c6e5bbbd603378b900e0c1"><td class="memItemLeft" align="right" valign="top"><a id="a8aaab261d5c6e5bbbd603378b900e0c1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AlignWithPegCommand</b> (<a class="el" href="class_robot_model.html">RobotModel</a> *robot)</td></tr>
-<tr class="separator:a8aaab261d5c6e5bbbd603378b900e0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3a26a2f33ac872b551f8ae0e69016e"><td class="memItemLeft" align="right" valign="top"><a id="aec3a26a2f33ac872b551f8ae0e69016e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
+<tr class="memitem:aa80f810ce5619a36edaef95cc29c9323"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_align_with_peg_command.html#aa80f810ce5619a36edaef95cc29c9323">AlignWithPegCommand</a> (<a class="el" href="class_robot_model.html">RobotModel</a> *robot, <a class="el" href="class_navx_p_i_d_source.html">NavxPIDSource</a> *navxSource, <a class="el" href="class_talon_encoder_p_i_d_source.html">TalonEncoderPIDSource</a> *talonSource)</td></tr>
+<tr class="separator:aa80f810ce5619a36edaef95cc29c9323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3a26a2f33ac872b551f8ae0e69016e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_align_with_peg_command.html#aec3a26a2f33ac872b551f8ae0e69016e">Init</a> ()</td></tr>
 <tr class="separator:aec3a26a2f33ac872b551f8ae0e69016e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a718e94b95fb192cf1e770e8af32dc616"><td class="memItemLeft" align="right" valign="top"><a id="a718e94b95fb192cf1e770e8af32dc616"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (double currTimeSec, double deltaTimeSec)</td></tr>
+<tr class="memitem:a718e94b95fb192cf1e770e8af32dc616"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_align_with_peg_command.html#a718e94b95fb192cf1e770e8af32dc616">Update</a> (double currTimeSec, double deltaTimeSec)</td></tr>
 <tr class="separator:a718e94b95fb192cf1e770e8af32dc616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f7b67c385b45154eef57703f242a4b3"><td class="memItemLeft" align="right" valign="top"><a id="a6f7b67c385b45154eef57703f242a4b3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshIni</b> ()</td></tr>
@@ -94,6 +92,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshIni</b> ()</td
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDone</b> ()</td></tr>
 <tr class="separator:aba9bae73047f3c752ab0e401dcb8eb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_auto_command"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_auto_command')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_auto_command.html">AutoCommand</a></td></tr>
+<tr class="memitem:aefc47d2d46e4ea8c74a11b0759f49d98 inherit pub_methods_class_auto_command"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_auto_command.html#aefc47d2d46e4ea8c74a11b0759f49d98">AutoCommand</a> ()</td></tr>
+<tr class="separator:aefc47d2d46e4ea8c74a11b0759f49d98 inherit pub_methods_class_auto_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13df47b2b27505a229670f1558491473 inherit pub_methods_class_auto_command"><td class="memItemLeft" align="right" valign="top"><a id="a13df47b2b27505a229670f1558491473"></a>
 <a class="el" href="class_auto_command.html">AutoCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetNextCommand</b> ()</td></tr>
 <tr class="separator:a13df47b2b27505a229670f1558491473 inherit pub_methods_class_auto_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,33 +101,181 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDone</b> ()</td></t
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNextCommand</b> (<a class="el" href="class_auto_command.html">AutoCommand</a> *myNextCommand)</td></tr>
 <tr class="separator:a339b50cd26f092f84c27b06493f320f0 inherit pub_methods_class_auto_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:af279cc96527016f0bf95bb965f285f18"><td class="memItemLeft" align="right" valign="top"><a id="af279cc96527016f0bf95bb965f285f18"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>AlignState</b> { <b>kPivotToAngleInit</b>, 
+<b>kPivotToAngleUpdate</b>, 
+<b>kDriveStraightInit</b>, 
+<b>kDriveStraightUpdate</b>
+ }</td></tr>
+<tr class="separator:af279cc96527016f0bf95bb965f285f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae4dda5f124199db08d86f12a66f0dc53"><td class="memItemLeft" align="right" valign="top"><a id="ae4dda5f124199db08d86f12a66f0dc53"></a>
-zmq::context_t *&#160;</td><td class="memItemRight" valign="bottom"><b>context_</b></td></tr>
-<tr class="separator:ae4dda5f124199db08d86f12a66f0dc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e3ef1a7681fc2eca54abeb93e2ab0f1"><td class="memItemLeft" align="right" valign="top"><a id="a0e3ef1a7681fc2eca54abeb93e2ab0f1"></a>
-zmq::socket_t *&#160;</td><td class="memItemRight" valign="bottom"><b>subscriber_</b></td></tr>
-<tr class="separator:a0e3ef1a7681fc2eca54abeb93e2ab0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c017a73cc8fdb0be4df4c33f6ed0c69"><td class="memItemLeft" align="right" valign="top"><a id="a3c017a73cc8fdb0be4df4c33f6ed0c69"></a>
+zmq::context_t *&#160;</td><td class="memItemRight" valign="bottom"><b>angleContext_</b></td></tr>
+<tr class="separator:a3c017a73cc8fdb0be4df4c33f6ed0c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250cdc9652d7b0635f7d3150924072d5"><td class="memItemLeft" align="right" valign="top"><a id="a250cdc9652d7b0635f7d3150924072d5"></a>
+zmq::socket_t *&#160;</td><td class="memItemRight" valign="bottom"><b>angleSubscriber_</b></td></tr>
+<tr class="separator:a250cdc9652d7b0635f7d3150924072d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e50459577c11114614ea656e9d57f62"><td class="memItemLeft" align="right" valign="top"><a id="a7e50459577c11114614ea656e9d57f62"></a>
+zmq::context_t *&#160;</td><td class="memItemRight" valign="bottom"><b>distanceContext_</b></td></tr>
+<tr class="separator:a7e50459577c11114614ea656e9d57f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc17e97be8cc0c3d3142c4f63537922f"><td class="memItemLeft" align="right" valign="top"><a id="acc17e97be8cc0c3d3142c4f63537922f"></a>
+zmq::socket_t *&#160;</td><td class="memItemRight" valign="bottom"><b>distanceSubscriber_</b></td></tr>
+<tr class="separator:acc17e97be8cc0c3d3142c4f63537922f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c86bc111a4e2e150c86e944b1a87c57"><td class="memItemLeft" align="right" valign="top"><a id="a4c86bc111a4e2e150c86e944b1a87c57"></a>
 <a class="el" href="class_robot_model.html">RobotModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>robot_</b></td></tr>
 <tr class="separator:a4c86bc111a4e2e150c86e944b1a87c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b6119efd05f41b8b06465562b72a987"><td class="memItemLeft" align="right" valign="top"><a id="a1b6119efd05f41b8b06465562b72a987"></a>
-<a class="el" href="class_pivot_command.html">PivotCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pivotCommand_</b></td></tr>
-<tr class="separator:a1b6119efd05f41b8b06465562b72a987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4207f07a4128f397e949b329a6732615"><td class="memItemLeft" align="right" valign="top"><a id="a4207f07a4128f397e949b329a6732615"></a>
 <a class="el" href="class_navx_p_i_d_source.html">NavxPIDSource</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>navxSource_</b></td></tr>
 <tr class="separator:a4207f07a4128f397e949b329a6732615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5fff7c205cbc3620d3e65876cce02a1"><td class="memItemLeft" align="right" valign="top"><a id="ab5fff7c205cbc3620d3e65876cce02a1"></a>
+<a class="el" href="class_talon_encoder_p_i_d_source.html">TalonEncoderPIDSource</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>talonSource_</b></td></tr>
+<tr class="separator:ab5fff7c205cbc3620d3e65876cce02a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c45beb61e8210d5a25850a45671fc42"><td class="memItemLeft" align="right" valign="top"><a id="a7c45beb61e8210d5a25850a45671fc42"></a>
+<a class="el" href="class_angle_p_i_d_output.html">AnglePIDOutput</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>angleOutput_</b></td></tr>
+<tr class="separator:a7c45beb61e8210d5a25850a45671fc42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9401514ee2df5a9e5ae0babf7ef3cc5a"><td class="memItemLeft" align="right" valign="top"><a id="a9401514ee2df5a9e5ae0babf7ef3cc5a"></a>
+<a class="el" href="class_distance_p_i_d_output.html">DistancePIDOutput</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>distanceOutput_</b></td></tr>
+<tr class="separator:a9401514ee2df5a9e5ae0babf7ef3cc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6119efd05f41b8b06465562b72a987"><td class="memItemLeft" align="right" valign="top"><a id="a1b6119efd05f41b8b06465562b72a987"></a>
+<a class="el" href="class_pivot_command.html">PivotCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pivotCommand_</b></td></tr>
+<tr class="separator:a1b6119efd05f41b8b06465562b72a987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f524185d4c315ca8bf7ea309c4e1478"><td class="memItemLeft" align="right" valign="top"><a id="a7f524185d4c315ca8bf7ea309c4e1478"></a>
+<a class="el" href="class_drive_straight_command.html">DriveStraightCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>driveStraightCommand_</b></td></tr>
+<tr class="separator:a7f524185d4c315ca8bf7ea309c4e1478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ec91ed94010fafd48ecdf2f26b1e81"><td class="memItemLeft" align="right" valign="top"><a id="ae6ec91ed94010fafd48ecdf2f26b1e81"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>desiredPivotDeltaAngle_</b></td></tr>
+<tr class="separator:ae6ec91ed94010fafd48ecdf2f26b1e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51dff5fc1c0f3e932e882f3f36c448cb"><td class="memItemLeft" align="right" valign="top"><a id="a51dff5fc1c0f3e932e882f3f36c448cb"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>desiredDistance_</b></td></tr>
+<tr class="separator:a51dff5fc1c0f3e932e882f3f36c448cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d65a2e3cb24992c069f406425ab769c"><td class="memItemLeft" align="right" valign="top"><a id="a5d65a2e3cb24992c069f406425ab769c"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>currState_</b></td></tr>
+<tr class="separator:a5d65a2e3cb24992c069f406425ab769c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74098a143c21fc3ad767661e15add1e"><td class="memItemLeft" align="right" valign="top"><a id="ad74098a143c21fc3ad767661e15add1e"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nextState_</b></td></tr>
+<tr class="separator:ad74098a143c21fc3ad767661e15add1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99596205fd983a9a2818e85696abc6b6"><td class="memItemLeft" align="right" valign="top"><a id="a99596205fd983a9a2818e85696abc6b6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDone_</b></td></tr>
 <tr class="separator:a99596205fd983a9a2818e85696abc6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d6286b2af4b1c7ad98c606af843cc21"><td class="memItemLeft" align="right" valign="top"><a id="a1d6286b2af4b1c7ad98c606af843cc21"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>pivotCommandIsDone_</b></td></tr>
-<tr class="separator:a1d6286b2af4b1c7ad98c606af843cc21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4beed361052a45e507629ed5a4058105"><td class="memItemLeft" align="right" valign="top"><a id="a4beed361052a45e507629ed5a4058105"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>pivotDeltaAngle_</b></td></tr>
-<tr class="separator:a4beed361052a45e507629ed5a4058105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa80f810ce5619a36edaef95cc29c9323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa80f810ce5619a36edaef95cc29c9323">&#9670;&nbsp;</a></span>AlignWithPegCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AlignWithPegCommand::AlignWithPegCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_robot_model.html">RobotModel</a> *&#160;</td>
+          <td class="paramname"><em>robot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_navx_p_i_d_source.html">NavxPIDSource</a> *&#160;</td>
+          <td class="paramname"><em>navxSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_talon_encoder_p_i_d_source.html">TalonEncoderPIDSource</a> *&#160;</td>
+          <td class="paramname"><em>talonSource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor for <a class="el" href="class_align_with_peg_command.html">AlignWithPegCommand</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">robot</td><td>a <a class="el" href="class_robot_model.html">RobotModel</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aec3a26a2f33ac872b551f8ae0e69016e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec3a26a2f33ac872b551f8ae0e69016e">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlignWithPegCommand::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets pivotCommandIsDone_ to true, sets pivotDeltaAngle_ to 0, and isDone_ to false </p>
+
+<p>Implements <a class="el" href="class_auto_command.html">AutoCommand</a>.</p>
+
+</div>
+</div>
+<a id="a718e94b95fb192cf1e770e8af32dc616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a718e94b95fb192cf1e770e8af32dc616">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AlignWithPegCommand::Update </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>currTimeSec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>deltaTimeSec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>If angle is less than 1 than set isDone to true, else, prints to SmartDashboard and continues updating </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">currTimeSec</td><td>a double that contains time in seconds </td></tr>
+    <tr><td class="paramname">deltaTimeSec</td><td>a double that contains update interval </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="class_auto_command.html">AutoCommand</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/maggiewang/Space_Cookies/spacecookies/frc2017/src/Auto/Commands/<a class="el" href="_align_with_peg_command_8h_source.html">AlignWithPegCommand.h</a></li>
 <li>/Users/maggiewang/Space_Cookies/spacecookies/frc2017/src/Auto/Commands/AlignWithPegCommand.cpp</li>

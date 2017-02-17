@@ -1,0 +1,89 @@
+\hypertarget{class_drive_straight_command}{}\section{Drive\+Straight\+Command Class Reference}
+\label{class_drive_straight_command}\index{Drive\+Straight\+Command@{Drive\+Straight\+Command}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a44a3540b0988f82cff5dbee7d3d2b552}\label{class_drive_straight_command_a44a3540b0988f82cff5dbee7d3d2b552}} 
+{\bfseries Drive\+Straight\+Command} (\hyperlink{class_navx_p_i_d_source}{Navx\+P\+I\+D\+Source} $\ast$navx\+Source, \hyperlink{class_talon_encoder_p_i_d_source}{Talon\+Encoder\+P\+I\+D\+Source} $\ast$talon\+Encoder\+Source, \hyperlink{class_angle_p_i_d_output}{Angle\+P\+I\+D\+Output} $\ast$angle\+P\+I\+D\+Output, \hyperlink{class_distance_p_i_d_output}{Distance\+P\+I\+D\+Output} $\ast$distance\+P\+I\+D\+Output, \hyperlink{class_robot_model}{Robot\+Model} $\ast$robot, double desired\+Distance)
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_aaee34fdec667e42e4a3df6cce27d5dda}\label{class_drive_straight_command_aaee34fdec667e42e4a3df6cce27d5dda}} 
+void {\bfseries Init} ()
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_aec2f8dadd78449084e7163b75be49b9e}\label{class_drive_straight_command_aec2f8dadd78449084e7163b75be49b9e}} 
+void {\bfseries Update} (double curr\+Time, double delta\+Time)
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a0bfb99a9cbdfb2b994cc2af46149789e}\label{class_drive_straight_command_a0bfb99a9cbdfb2b994cc2af46149789e}} 
+bool {\bfseries Is\+Done} ()
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a55ffe257f2ee1892dc4ded618eeb2877}\label{class_drive_straight_command_a55ffe257f2ee1892dc4ded618eeb2877}} 
+void {\bfseries Get\+Ini\+Values} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_aa19044f8470773a0a78d436e76793e85}\label{class_drive_straight_command_aa19044f8470773a0a78d436e76793e85}} 
+\hyperlink{class_navx_p_i_d_source}{Navx\+P\+I\+D\+Source} $\ast$ {\bfseries navx\+Source\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a5bcabefc32269e4e1e8a9b615ae4c858}\label{class_drive_straight_command_a5bcabefc32269e4e1e8a9b615ae4c858}} 
+\hyperlink{class_talon_encoder_p_i_d_source}{Talon\+Encoder\+P\+I\+D\+Source} $\ast$ {\bfseries talon\+Encoder\+Source\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a4176a77943be202562f5e59fc45bb81b}\label{class_drive_straight_command_a4176a77943be202562f5e59fc45bb81b}} 
+\hyperlink{class_angle_p_i_d_output}{Angle\+P\+I\+D\+Output} $\ast$ {\bfseries angle\+P\+I\+D\+Output\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_aa1776b5cf77560fb0e10fc8dd8a19384}\label{class_drive_straight_command_aa1776b5cf77560fb0e10fc8dd8a19384}} 
+\hyperlink{class_distance_p_i_d_output}{Distance\+P\+I\+D\+Output} $\ast$ {\bfseries distance\+P\+I\+D\+Output\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_ab0c6603062389523a97b269cf1de0b6d}\label{class_drive_straight_command_ab0c6603062389523a97b269cf1de0b6d}} 
+P\+I\+D\+Controller $\ast$ {\bfseries angle\+P\+I\+D\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a683760b04b20beaba6d2283474cc9a57}\label{class_drive_straight_command_a683760b04b20beaba6d2283474cc9a57}} 
+P\+I\+D\+Controller $\ast$ {\bfseries distance\+P\+I\+D\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_ad93fa1271f0fe6eb8b8ebcfff4e8c385}\label{class_drive_straight_command_ad93fa1271f0fe6eb8b8ebcfff4e8c385}} 
+\hyperlink{class_robot_model}{Robot\+Model} $\ast$ {\bfseries robot\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a00480d21eea8d62373fb4060a005e2e1}\label{class_drive_straight_command_a00480d21eea8d62373fb4060a005e2e1}} 
+double {\bfseries r\+P\+Fac\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a7281dac3bce6b3e0106cfea040c390d9}\label{class_drive_straight_command_a7281dac3bce6b3e0106cfea040c390d9}} 
+double {\bfseries r\+I\+Fac\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a76703f7ef3b9fc8a67b762b38e34e3dc}\label{class_drive_straight_command_a76703f7ef3b9fc8a67b762b38e34e3dc}} 
+double {\bfseries r\+D\+Fac\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a592cb70bc6a0d21d34584a90e8372045}\label{class_drive_straight_command_a592cb70bc6a0d21d34584a90e8372045}} 
+double {\bfseries d\+P\+Fac\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a10ac0e9284d605b09e3e21b2eb35b833}\label{class_drive_straight_command_a10ac0e9284d605b09e3e21b2eb35b833}} 
+double {\bfseries d\+I\+Fac\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a774f1196c31b6a155a6993fc394b915b}\label{class_drive_straight_command_a774f1196c31b6a155a6993fc394b915b}} 
+double {\bfseries d\+D\+Fac\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_ae84b9ab1e5a758caa83ad342bcd4548e}\label{class_drive_straight_command_ae84b9ab1e5a758caa83ad342bcd4548e}} 
+double {\bfseries initial\+Angle\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a2981dba5d8c6c34f2a539814da8a465a}\label{class_drive_straight_command_a2981dba5d8c6c34f2a539814da8a465a}} 
+double {\bfseries initial\+Avg\+Distance\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a17830efbf8d213617041983ef6e8c1a3}\label{class_drive_straight_command_a17830efbf8d213617041983ef6e8c1a3}} 
+double {\bfseries desired\+Distance\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_aeca831349b67a57b125e89ba933ee94c}\label{class_drive_straight_command_aeca831349b67a57b125e89ba933ee94c}} 
+double {\bfseries desired\+Total\+Avg\+Distance\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a8ada61de62003b01827fe6d2f13d46dc}\label{class_drive_straight_command_a8ada61de62003b01827fe6d2f13d46dc}} 
+double {\bfseries left\+Motor\+Output\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a0d4f24d28cffc8360c0e7040e314c6fa}\label{class_drive_straight_command_a0d4f24d28cffc8360c0e7040e314c6fa}} 
+double {\bfseries right\+Motor\+Output\+\_\+}
+\item 
+\mbox{\Hypertarget{class_drive_straight_command_a9e9cecadbe0cc612d5206e1d66040734}\label{class_drive_straight_command_a9e9cecadbe0cc612d5206e1d66040734}} 
+bool {\bfseries is\+Done\+\_\+}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/maggiewang/\+Space\+\_\+\+Cookies/spacecookies/frc2017/src/\+Auto/\+Commands/Drive\+Straight\+Command.\+h\item 
+/\+Users/maggiewang/\+Space\+\_\+\+Cookies/spacecookies/frc2017/src/\+Auto/\+Commands/Drive\+Straight\+Command.\+cpp\end{DoxyCompactItemize}

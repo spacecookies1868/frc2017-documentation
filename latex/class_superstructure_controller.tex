@@ -1,10 +1,77 @@
 \hypertarget{class_superstructure_controller}{}\section{Superstructure\+Controller Class Reference}
 \label{class_superstructure_controller}\index{Superstructure\+Controller@{Superstructure\+Controller}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_a05547fe1daa5fa738306da3e73fc1f47}\label{class_superstructure_controller_a05547fe1daa5fa738306da3e73fc1f47}} 
+enum {\bfseries Superstructure\+State} \{ \newline
+{\bfseries k\+Init}, 
+{\bfseries k\+Idle}, 
+{\bfseries k\+Intake}, 
+{\bfseries k\+Feeder\+And\+Flywheel}, 
+\newline
+{\bfseries k\+Climber}
+ \}
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_superstructure_controller_a36c3ee9cd60b7d6931d913b70f358950}\label{class_superstructure_controller_a36c3ee9cd60b7d6931d913b70f358950}} 
+{\bfseries Superstructure\+Controller} (\hyperlink{class_robot_model}{Robot\+Model} $\ast$my\+Robot, \hyperlink{class_remote_control}{Remote\+Control} $\ast$my\+Human\+Control)
+\item 
 \mbox{\Hypertarget{class_superstructure_controller_a1dab262418ba343c7bd9b2b86a0172a0}\label{class_superstructure_controller_a1dab262418ba343c7bd9b2b86a0172a0}} 
 void {\bfseries Reset} ()
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_ac3e296c77a9e1f7f230a44cd70efa505}\label{class_superstructure_controller_ac3e296c77a9e1f7f230a44cd70efa505}} 
+void {\bfseries Update} (double curr\+Time\+Sec, double delta\+Time\+Sec)
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_a727aab210888e142e1a72e247aaba1ad}\label{class_superstructure_controller_a727aab210888e142e1a72e247aaba1ad}} 
+void {\bfseries Set\+Auto\+Flywheel\+Desired} (bool desired)
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_afd3c2a393e14e5d3f52383afba19a792}\label{class_superstructure_controller_afd3c2a393e14e5d3f52383afba19a792}} 
+bool {\bfseries Get\+Auto\+Flywheel\+Desired} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_a3fe947d596a78a8cbf978b4136319d62}\label{class_superstructure_controller_a3fe947d596a78a8cbf978b4136319d62}} 
+\hyperlink{class_robot_model}{Robot\+Model} $\ast$ {\bfseries robot\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_a8d5459aa3bbac3db4fc5b70fcd7fe623}\label{class_superstructure_controller_a8d5459aa3bbac3db4fc5b70fcd7fe623}} 
+\hyperlink{class_remote_control}{Remote\+Control} $\ast$ {\bfseries human\+Control\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_aba41d4398aaf7202a715406e6c507b6b}\label{class_superstructure_controller_aba41d4398aaf7202a715406e6c507b6b}} 
+P\+I\+D\+Controller $\ast$ {\bfseries intake\+Controller\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_aa93e18ff0e3a175edc5afe8273515a16}\label{class_superstructure_controller_aa93e18ff0e3a175edc5afe8273515a16}} 
+P\+I\+D\+Controller $\ast$ {\bfseries flywheel\+Controller\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_aacdb05473bd34f2ddffbedd70e08606f}\label{class_superstructure_controller_aacdb05473bd34f2ddffbedd70e08606f}} 
+uint32\+\_\+t {\bfseries m\+\_\+state\+Val\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_a82489ce039b64b5272063ea34a1ef452}\label{class_superstructure_controller_a82489ce039b64b5272063ea34a1ef452}} 
+uint32\+\_\+t {\bfseries next\+State\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_a37e870e4ef394135ceaab2ae2d824cf1}\label{class_superstructure_controller_a37e870e4ef394135ceaab2ae2d824cf1}} 
+double {\bfseries desired\+Intake\+Velocity\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_abac4e5c177dd85d83f86cd2784d92c71}\label{class_superstructure_controller_abac4e5c177dd85d83f86cd2784d92c71}} 
+double {\bfseries desired\+Flywheel\+Velocity\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_a259ae5217cce6abf2894f38a1768a39e}\label{class_superstructure_controller_a259ae5217cce6abf2894f38a1768a39e}} 
+double {\bfseries expected\+Intake\+Motor\+Output\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_af65a138be4b54b771bd8d0a920d4cfed}\label{class_superstructure_controller_af65a138be4b54b771bd8d0a920d4cfed}} 
+double {\bfseries expected\+Flywheel\+Motor\+Output\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_a6ab9b46dca3b35ea49ee93e27754e380}\label{class_superstructure_controller_a6ab9b46dca3b35ea49ee93e27754e380}} 
+double {\bfseries feeder\+Motor\+Output\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_aee34737a08e7f6c0fa006adfd53e1300}\label{class_superstructure_controller_aee34737a08e7f6c0fa006adfd53e1300}} 
+double {\bfseries climber\+Motor\+Output\+\_\+}
+\item 
+\mbox{\Hypertarget{class_superstructure_controller_ad0a8a6feea0dba27c419f6084ce7937a}\label{class_superstructure_controller_ad0a8a6feea0dba27c419f6084ce7937a}} 
+bool {\bfseries auto\+Flywheel\+Desired\+\_\+}
 \end{DoxyCompactItemize}
 
 

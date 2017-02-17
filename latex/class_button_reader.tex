@@ -9,23 +9,17 @@ Inheritance diagram for Button\+Reader\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_button_reader_a1bb75f75d6e392a748c6101e09e3bd3c}\label{class_button_reader_a1bb75f75d6e392a748c6101e09e3bd3c}} 
-{\bfseries Button\+Reader} (Joystick $\ast$joy, int button\+Num)
+\hyperlink{class_button_reader_a1bb75f75d6e392a748c6101e09e3bd3c}{Button\+Reader} (Joystick $\ast$joy, int button\+Num)
 \item 
-\mbox{\Hypertarget{class_button_reader_a4585d7ca717ea49021ac5a786c352b81}\label{class_button_reader_a4585d7ca717ea49021ac5a786c352b81}} 
-void {\bfseries Read\+Value} ()
+void \hyperlink{class_button_reader_a4585d7ca717ea49021ac5a786c352b81}{Read\+Value} ()
 \item 
-\mbox{\Hypertarget{class_button_reader_a89a81fffd0726973811c6e791ac12a1d}\label{class_button_reader_a89a81fffd0726973811c6e791ac12a1d}} 
-bool {\bfseries Is\+Down} ()
+bool \hyperlink{class_button_reader_a89a81fffd0726973811c6e791ac12a1d}{Is\+Down} ()
 \item 
-\mbox{\Hypertarget{class_button_reader_ace4a07bf7f65418c026477b9d5ab1225}\label{class_button_reader_ace4a07bf7f65418c026477b9d5ab1225}} 
-bool {\bfseries Was\+Just\+Pressed} ()
+bool \hyperlink{class_button_reader_ace4a07bf7f65418c026477b9d5ab1225}{Was\+Just\+Pressed} ()
 \item 
-\mbox{\Hypertarget{class_button_reader_afded4de61711a165928fe0730d8743e7}\label{class_button_reader_afded4de61711a165928fe0730d8743e7}} 
-bool {\bfseries Was\+Just\+Released} ()
+bool \hyperlink{class_button_reader_afded4de61711a165928fe0730d8743e7}{Was\+Just\+Released} ()
 \item 
-\mbox{\Hypertarget{class_button_reader_a2c19cae72a053bbba95f1c1a91735876}\label{class_button_reader_a2c19cae72a053bbba95f1c1a91735876}} 
-bool {\bfseries State\+Just\+Changed} ()
+bool \hyperlink{class_button_reader_a2c19cae72a053bbba95f1c1a91735876}{State\+Just\+Changed} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -42,6 +36,60 @@ bool {\bfseries last\+State}
 \mbox{\Hypertarget{class_button_reader_a1d139e4dbe81f6b1942b5f74c56b6492}\label{class_button_reader_a1d139e4dbe81f6b1942b5f74c56b6492}} 
 bool {\bfseries curr\+State}
 \end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_button_reader_a1bb75f75d6e392a748c6101e09e3bd3c}\label{class_button_reader_a1bb75f75d6e392a748c6101e09e3bd3c}} 
+\index{Button\+Reader@{Button\+Reader}!Button\+Reader@{Button\+Reader}}
+\index{Button\+Reader@{Button\+Reader}!Button\+Reader@{Button\+Reader}}
+\subsubsection{\texorpdfstring{Button\+Reader()}{ButtonReader()}}
+{\footnotesize\ttfamily Button\+Reader\+::\+Button\+Reader (\begin{DoxyParamCaption}\item[{Joystick $\ast$}]{joy,  }\item[{int}]{button\+Num }\end{DoxyParamCaption})}
+
+Sets joystick, button, gets curr\+State from rawbutton, sets last state to curr\+State 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_button_reader_a89a81fffd0726973811c6e791ac12a1d}\label{class_button_reader_a89a81fffd0726973811c6e791ac12a1d}} 
+\index{Button\+Reader@{Button\+Reader}!Is\+Down@{Is\+Down}}
+\index{Is\+Down@{Is\+Down}!Button\+Reader@{Button\+Reader}}
+\subsubsection{\texorpdfstring{Is\+Down()}{IsDown()}}
+{\footnotesize\ttfamily bool Button\+Reader\+::\+Is\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+current state of button (whether its currently pressed) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_button_reader_a4585d7ca717ea49021ac5a786c352b81}\label{class_button_reader_a4585d7ca717ea49021ac5a786c352b81}} 
+\index{Button\+Reader@{Button\+Reader}!Read\+Value@{Read\+Value}}
+\index{Read\+Value@{Read\+Value}!Button\+Reader@{Button\+Reader}}
+\subsubsection{\texorpdfstring{Read\+Value()}{ReadValue()}}
+{\footnotesize\ttfamily void Button\+Reader\+::\+Read\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets last\+State to curr\+State, updates curr\+State w/button \mbox{\Hypertarget{class_button_reader_a2c19cae72a053bbba95f1c1a91735876}\label{class_button_reader_a2c19cae72a053bbba95f1c1a91735876}} 
+\index{Button\+Reader@{Button\+Reader}!State\+Just\+Changed@{State\+Just\+Changed}}
+\index{State\+Just\+Changed@{State\+Just\+Changed}!Button\+Reader@{Button\+Reader}}
+\subsubsection{\texorpdfstring{State\+Just\+Changed()}{StateJustChanged()}}
+{\footnotesize\ttfamily bool Button\+Reader\+::\+State\+Just\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true if last\+State doesn\textquotesingle{}t equal curr\+State. else return false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_button_reader_ace4a07bf7f65418c026477b9d5ab1225}\label{class_button_reader_ace4a07bf7f65418c026477b9d5ab1225}} 
+\index{Button\+Reader@{Button\+Reader}!Was\+Just\+Pressed@{Was\+Just\+Pressed}}
+\index{Was\+Just\+Pressed@{Was\+Just\+Pressed}!Button\+Reader@{Button\+Reader}}
+\subsubsection{\texorpdfstring{Was\+Just\+Pressed()}{WasJustPressed()}}
+{\footnotesize\ttfamily bool Button\+Reader\+::\+Was\+Just\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true if last\+State is true and curr\+State is false. else returns false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_button_reader_afded4de61711a165928fe0730d8743e7}\label{class_button_reader_afded4de61711a165928fe0730d8743e7}} 
+\index{Button\+Reader@{Button\+Reader}!Was\+Just\+Released@{Was\+Just\+Released}}
+\index{Was\+Just\+Released@{Was\+Just\+Released}!Button\+Reader@{Button\+Reader}}
+\subsubsection{\texorpdfstring{Was\+Just\+Released()}{WasJustReleased()}}
+{\footnotesize\ttfamily bool Button\+Reader\+::\+Was\+Just\+Released (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true if last\+State is false and curr\+State is true. else returns false. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

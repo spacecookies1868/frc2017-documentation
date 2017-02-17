@@ -78,14 +78,12 @@ Inheritance diagram for OneGearMode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a358df92af1a31ceea511aa75b2bff393"><td class="memItemLeft" align="right" valign="top"><a id="a358df92af1a31ceea511aa75b2bff393"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>OneGearMode</b> (<a class="el" href="class_robot_model.html">RobotModel</a> *robot)</td></tr>
-<tr class="separator:a358df92af1a31ceea511aa75b2bff393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738b0127f542fb89c5a5976e534b6ef9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_one_gear_mode.html#a738b0127f542fb89c5a5976e534b6ef9">OneGearMode</a> (<a class="el" href="class_robot_model.html">RobotModel</a> *robot, <a class="el" href="class_navx_p_i_d_source.html">NavxPIDSource</a> *navxSource, <a class="el" href="class_talon_encoder_p_i_d_source.html">TalonEncoderPIDSource</a> *talonSource)</td></tr>
+<tr class="separator:a738b0127f542fb89c5a5976e534b6ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a496910af844fa979cd7d879831dbb609"><td class="memItemLeft" align="right" valign="top"><a id="a496910af844fa979cd7d879831dbb609"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateQueue</b> ()</td></tr>
 <tr class="separator:a496910af844fa979cd7d879831dbb609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e4583155a7f2c96f19e937d1315bdf8"><td class="memItemLeft" align="right" valign="top"><a id="a6e4583155a7f2c96f19e937d1315bdf8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
+<tr class="memitem:a6e4583155a7f2c96f19e937d1315bdf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_one_gear_mode.html#a6e4583155a7f2c96f19e937d1315bdf8">Init</a> ()</td></tr>
 <tr class="separator:a6e4583155a7f2c96f19e937d1315bdf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aff75538d9985927fd0f10536b66aec"><td class="memItemLeft" align="right" valign="top"><a id="a1aff75538d9985927fd0f10536b66aec"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshIni</b> ()</td></tr>
@@ -107,9 +105,18 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ad7d249a36949edf64d23759c626e4c98"><td class="memItemLeft" align="right" valign="top"><a id="ad7d249a36949edf64d23759c626e4c98"></a>
 <a class="el" href="class_auto_command.html">AutoCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>firstCommand_</b></td></tr>
 <tr class="separator:ad7d249a36949edf64d23759c626e4c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac943774ff57a1a71e70edb174ed57d17"><td class="memItemLeft" align="right" valign="top"><a id="ac943774ff57a1a71e70edb174ed57d17"></a>
+<a class="el" href="class_path_command.html">PathCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>liftPath_</b></td></tr>
+<tr class="separator:ac943774ff57a1a71e70edb174ed57d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a622236cb11ee049a22db35761fe2b07f"><td class="memItemLeft" align="right" valign="top"><a id="a622236cb11ee049a22db35761fe2b07f"></a>
 <a class="el" href="class_align_with_peg_command.html">AlignWithPegCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>alignWithPegCommand_</b></td></tr>
 <tr class="separator:a622236cb11ee049a22db35761fe2b07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d770f6dbe9a4895cc2c089325c979f0"><td class="memItemLeft" align="right" valign="top"><a id="a8d770f6dbe9a4895cc2c089325c979f0"></a>
+<a class="el" href="class_navx_p_i_d_source.html">NavxPIDSource</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>navxSource_</b></td></tr>
+<tr class="separator:a8d770f6dbe9a4895cc2c089325c979f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1971e43e414dc22820e5db461f8f6a00"><td class="memItemLeft" align="right" valign="top"><a id="a1971e43e414dc22820e5db461f8f6a00"></a>
+<a class="el" href="class_talon_encoder_p_i_d_source.html">TalonEncoderPIDSource</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>talonSource_</b></td></tr>
+<tr class="separator:a1971e43e414dc22820e5db461f8f6a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -118,6 +125,76 @@ Additional Inherited Members</h2></td></tr>
 <a class="el" href="class_auto_command.html">AutoCommand</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>currentCommand</b></td></tr>
 <tr class="separator:acaf4e4b36bbc309c6fae4cdac56b38d3 inherit pro_attribs_class_auto_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a738b0127f542fb89c5a5976e534b6ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a738b0127f542fb89c5a5976e534b6ef9">&#9670;&nbsp;</a></span>OneGearMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OneGearMode::OneGearMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_robot_model.html">RobotModel</a> *&#160;</td>
+          <td class="paramname"><em>robot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_navx_p_i_d_source.html">NavxPIDSource</a> *&#160;</td>
+          <td class="paramname"><em>navxSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_talon_encoder_p_i_d_source.html">TalonEncoderPIDSource</a> *&#160;</td>
+          <td class="paramname"><em>talonSource</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs new <a class="el" href="class_align_with_peg_command.html">AlignWithPegCommand</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">robot</td><td>a <a class="el" href="class_robot_model.html">RobotModel</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6e4583155a7f2c96f19e937d1315bdf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4583155a7f2c96f19e937d1315bdf8">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OneGearMode::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes <a class="el" href="class_align_with_peg_command.html">AlignWithPegCommand</a> and sets currentCommand to firstCommand </p>
+
+<p>Implements <a class="el" href="class_auto_mode.html">AutoMode</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/maggiewang/Space_Cookies/spacecookies/frc2017/src/Auto/Modes/<a class="el" href="_one_gear_mode_8h_source.html">OneGearMode.h</a></li>
 <li>/Users/maggiewang/Space_Cookies/spacecookies/frc2017/src/Auto/Modes/OneGearMode.cpp</li>

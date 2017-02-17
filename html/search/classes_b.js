@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['superstructurecontroller',['SuperstructureController',['../class_superstructure_controller.html',1,'']]],
-  ['switchreader',['SwitchReader',['../class_switch_reader.html',1,'']]]
+  ['remotecontrol',['RemoteControl',['../class_remote_control.html',1,'']]],
+  ['robotmodel',['RobotModel',['../class_robot_model.html',1,'']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['testmode',['TestMode',['../class_test_mode.html',1,'']]],
-  ['togglebuttonreader',['ToggleButtonReader',['../class_toggle_button_reader.html',1,'']]]
+  ['superstructurecontroller',['SuperstructureController',['../class_superstructure_controller.html',1,'']]],
+  ['switchreader',['SwitchReader',['../class_switch_reader.html',1,'']]]
 ];

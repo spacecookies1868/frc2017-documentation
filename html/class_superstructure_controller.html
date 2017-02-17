@@ -59,18 +59,87 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_superstructure_controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">SuperstructureController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a05547fe1daa5fa738306da3e73fc1f47"><td class="memItemLeft" align="right" valign="top"><a id="a05547fe1daa5fa738306da3e73fc1f47"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SuperstructureState</b> { <br />
+&#160;&#160;<b>kInit</b>, 
+<b>kIdle</b>, 
+<b>kIntake</b>, 
+<b>kFeederAndFlywheel</b>, 
+<br />
+&#160;&#160;<b>kClimber</b>
+<br />
+ }</td></tr>
+<tr class="separator:a05547fe1daa5fa738306da3e73fc1f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a36c3ee9cd60b7d6931d913b70f358950"><td class="memItemLeft" align="right" valign="top"><a id="a36c3ee9cd60b7d6931d913b70f358950"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SuperstructureController</b> (<a class="el" href="class_robot_model.html">RobotModel</a> *myRobot, <a class="el" href="class_remote_control.html">RemoteControl</a> *myHumanControl)</td></tr>
+<tr class="separator:a36c3ee9cd60b7d6931d913b70f358950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dab262418ba343c7bd9b2b86a0172a0"><td class="memItemLeft" align="right" valign="top"><a id="a1dab262418ba343c7bd9b2b86a0172a0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
 <tr class="separator:a1dab262418ba343c7bd9b2b86a0172a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e296c77a9e1f7f230a44cd70efa505"><td class="memItemLeft" align="right" valign="top"><a id="ac3e296c77a9e1f7f230a44cd70efa505"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (double currTimeSec, double deltaTimeSec)</td></tr>
+<tr class="separator:ac3e296c77a9e1f7f230a44cd70efa505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727aab210888e142e1a72e247aaba1ad"><td class="memItemLeft" align="right" valign="top"><a id="a727aab210888e142e1a72e247aaba1ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAutoFlywheelDesired</b> (bool desired)</td></tr>
+<tr class="separator:a727aab210888e142e1a72e247aaba1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3c2a393e14e5d3f52383afba19a792"><td class="memItemLeft" align="right" valign="top"><a id="afd3c2a393e14e5d3f52383afba19a792"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAutoFlywheelDesired</b> ()</td></tr>
+<tr class="separator:afd3c2a393e14e5d3f52383afba19a792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a3fe947d596a78a8cbf978b4136319d62"><td class="memItemLeft" align="right" valign="top"><a id="a3fe947d596a78a8cbf978b4136319d62"></a>
+<a class="el" href="class_robot_model.html">RobotModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>robot_</b></td></tr>
+<tr class="separator:a3fe947d596a78a8cbf978b4136319d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5459aa3bbac3db4fc5b70fcd7fe623"><td class="memItemLeft" align="right" valign="top"><a id="a8d5459aa3bbac3db4fc5b70fcd7fe623"></a>
+<a class="el" href="class_remote_control.html">RemoteControl</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>humanControl_</b></td></tr>
+<tr class="separator:a8d5459aa3bbac3db4fc5b70fcd7fe623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba41d4398aaf7202a715406e6c507b6b"><td class="memItemLeft" align="right" valign="top"><a id="aba41d4398aaf7202a715406e6c507b6b"></a>
+PIDController *&#160;</td><td class="memItemRight" valign="bottom"><b>intakeController_</b></td></tr>
+<tr class="separator:aba41d4398aaf7202a715406e6c507b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93e18ff0e3a175edc5afe8273515a16"><td class="memItemLeft" align="right" valign="top"><a id="aa93e18ff0e3a175edc5afe8273515a16"></a>
+PIDController *&#160;</td><td class="memItemRight" valign="bottom"><b>flywheelController_</b></td></tr>
+<tr class="separator:aa93e18ff0e3a175edc5afe8273515a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacdb05473bd34f2ddffbedd70e08606f"><td class="memItemLeft" align="right" valign="top"><a id="aacdb05473bd34f2ddffbedd70e08606f"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_stateVal_</b></td></tr>
+<tr class="separator:aacdb05473bd34f2ddffbedd70e08606f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82489ce039b64b5272063ea34a1ef452"><td class="memItemLeft" align="right" valign="top"><a id="a82489ce039b64b5272063ea34a1ef452"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nextState_</b></td></tr>
+<tr class="separator:a82489ce039b64b5272063ea34a1ef452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e870e4ef394135ceaab2ae2d824cf1"><td class="memItemLeft" align="right" valign="top"><a id="a37e870e4ef394135ceaab2ae2d824cf1"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>desiredIntakeVelocity_</b></td></tr>
+<tr class="separator:a37e870e4ef394135ceaab2ae2d824cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac4e5c177dd85d83f86cd2784d92c71"><td class="memItemLeft" align="right" valign="top"><a id="abac4e5c177dd85d83f86cd2784d92c71"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>desiredFlywheelVelocity_</b></td></tr>
+<tr class="separator:abac4e5c177dd85d83f86cd2784d92c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259ae5217cce6abf2894f38a1768a39e"><td class="memItemLeft" align="right" valign="top"><a id="a259ae5217cce6abf2894f38a1768a39e"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>expectedIntakeMotorOutput_</b></td></tr>
+<tr class="separator:a259ae5217cce6abf2894f38a1768a39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af65a138be4b54b771bd8d0a920d4cfed"><td class="memItemLeft" align="right" valign="top"><a id="af65a138be4b54b771bd8d0a920d4cfed"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>expectedFlywheelMotorOutput_</b></td></tr>
+<tr class="separator:af65a138be4b54b771bd8d0a920d4cfed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab9b46dca3b35ea49ee93e27754e380"><td class="memItemLeft" align="right" valign="top"><a id="a6ab9b46dca3b35ea49ee93e27754e380"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>feederMotorOutput_</b></td></tr>
+<tr class="separator:a6ab9b46dca3b35ea49ee93e27754e380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee34737a08e7f6c0fa006adfd53e1300"><td class="memItemLeft" align="right" valign="top"><a id="aee34737a08e7f6c0fa006adfd53e1300"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>climberMotorOutput_</b></td></tr>
+<tr class="separator:aee34737a08e7f6c0fa006adfd53e1300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a8a6feea0dba27c419f6084ce7937a"><td class="memItemLeft" align="right" valign="top"><a id="ad0a8a6feea0dba27c419f6084ce7937a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>autoFlywheelDesired_</b></td></tr>
+<tr class="separator:ad0a8a6feea0dba27c419f6084ce7937a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/maggiewang/Space_Cookies/spacecookies/frc2017/src/Controllers/<a class="el" href="_superstructure_controller_8h_source.html">SuperstructureController.h</a></li>

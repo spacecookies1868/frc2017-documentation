@@ -15,20 +15,17 @@ Inheritance diagram for Pivot\+Command\+:\begin{figure}[H]
 \item 
 \hyperlink{class_pivot_command_aeed6d5f91fade3124c4a66080edad50d}{Pivot\+Command} (\hyperlink{class_robot_model}{Robot\+Model} $\ast$robot, double desired\+Angle, bool is\+Absolute\+Position, \hyperlink{class_navx_p_i_d_source}{Navx\+P\+I\+D\+Source} $\ast$navx\+Source)
 \item 
-\mbox{\Hypertarget{class_pivot_command_a4bc3497678e5fdc84e0ec545f87fcd2a}\label{class_pivot_command_a4bc3497678e5fdc84e0ec545f87fcd2a}} 
-void {\bfseries Init} ()
+void \hyperlink{class_pivot_command_a4bc3497678e5fdc84e0ec545f87fcd2a}{Init} ()
 \item 
-\mbox{\Hypertarget{class_pivot_command_a728a96471b607920a8e3581b15c2a6ed}\label{class_pivot_command_a728a96471b607920a8e3581b15c2a6ed}} 
-void {\bfseries Reset} ()
+void \hyperlink{class_pivot_command_a728a96471b607920a8e3581b15c2a6ed}{Reset} ()
 \item 
-\mbox{\Hypertarget{class_pivot_command_aabcc35cb7b9a7401285f800475d79bb1}\label{class_pivot_command_aabcc35cb7b9a7401285f800475d79bb1}} 
-void {\bfseries Refresh\+Ini} ()
+void \hyperlink{class_pivot_command_add10aedba04f38b03753ac09fc1d4faf}{Get\+Ini\+Values} ()
 \item 
-\mbox{\Hypertarget{class_pivot_command_ab43066cd70a708f342f53f94558acf98}\label{class_pivot_command_ab43066cd70a708f342f53f94558acf98}} 
-void {\bfseries Update} (double curr\+Time\+Sec, double delta\+Time\+Sec)
+void \hyperlink{class_pivot_command_ab43066cd70a708f342f53f94558acf98}{Update} (double curr\+Time\+Sec, double delta\+Time\+Sec)
 \item 
-\mbox{\Hypertarget{class_pivot_command_acc8ed3e6a76a19a05201131f0bd7ccc5}\label{class_pivot_command_acc8ed3e6a76a19a05201131f0bd7ccc5}} 
-bool {\bfseries Is\+Done} ()
+bool \hyperlink{class_pivot_command_acc8ed3e6a76a19a05201131f0bd7ccc5}{Is\+Done} ()
+\item 
+virtual \hyperlink{class_pivot_command_a04deb767183afd763bec2ca5f3edc50d}{$\sim$\+Pivot\+Command} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -71,8 +68,7 @@ P\+I\+D\+Controller $\ast$ {\bfseries pivot\+P\+I\+D\+\_\+}
 \mbox{\Hypertarget{class_pivot_command_a5ec7f0d7b577e7830251e78a895798b5}\label{class_pivot_command_a5ec7f0d7b577e7830251e78a895798b5}} 
 double {\bfseries pivot\+Command\+Start\+Time\+\_\+}
 \item 
-\mbox{\Hypertarget{class_pivot_command_aa0b7e3b621788df09e8f2cc3c184b858}\label{class_pivot_command_aa0b7e3b621788df09e8f2cc3c184b858}} 
-double {\bfseries min\+Drive\+Pivot\+Output\+\_\+}
+double \hyperlink{class_pivot_command_aa0b7e3b621788df09e8f2cc3c184b858}{min\+Drive\+Pivot\+Output\+\_\+}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -98,7 +94,13 @@ A class implementing Pivot P\+ID the W\+P\+I\+Library P\+ID Controller
 {\em navx\+Source} & a \hyperlink{class_navx_p_i_d_source}{Navx\+P\+I\+D\+Source} \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_pivot_command_a04deb767183afd763bec2ca5f3edc50d}\label{class_pivot_command_a04deb767183afd763bec2ca5f3edc50d}} 
+\index{Pivot\+Command@{Pivot\+Command}!````~Pivot\+Command@{$\sim$\+Pivot\+Command}}
+\index{````~Pivot\+Command@{$\sim$\+Pivot\+Command}!Pivot\+Command@{Pivot\+Command}}
+\subsubsection{\texorpdfstring{$\sim$\+Pivot\+Command()}{~PivotCommand()}}
+{\footnotesize\ttfamily Pivot\+Command\+::$\sim$\+Pivot\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+Destructor 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{class_pivot_command_a56f0c011b2a744f1ed0a2b5cb301cdb2}\label{class_pivot_command_a56f0c011b2a744f1ed0a2b5cb301cdb2}} 
@@ -115,7 +117,68 @@ Calculating the value of delta angle if the angle is absolute position.
 \begin{DoxyReturn}{Returns}
 delta\+Angle which is the amount we have to turn to get to the absolute position 
 \end{DoxyReturn}
+\mbox{\Hypertarget{class_pivot_command_add10aedba04f38b03753ac09fc1d4faf}\label{class_pivot_command_add10aedba04f38b03753ac09fc1d4faf}} 
+\index{Pivot\+Command@{Pivot\+Command}!Get\+Ini\+Values@{Get\+Ini\+Values}}
+\index{Get\+Ini\+Values@{Get\+Ini\+Values}!Pivot\+Command@{Pivot\+Command}}
+\subsubsection{\texorpdfstring{Get\+Ini\+Values()}{GetIniValues()}}
+{\footnotesize\ttfamily void Pivot\+Command\+::\+Get\+Ini\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Sets P\+ID values to 0.\+0 \mbox{\Hypertarget{class_pivot_command_a4bc3497678e5fdc84e0ec545f87fcd2a}\label{class_pivot_command_a4bc3497678e5fdc84e0ec545f87fcd2a}} 
+\index{Pivot\+Command@{Pivot\+Command}!Init@{Init}}
+\index{Init@{Init}!Pivot\+Command@{Pivot\+Command}}
+\subsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Pivot\+Command\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets P\+ID values to 0, gets P\+ID from navX, sets Setpoint, continuous to false, output range, enables pivot\+P\+ID 
+
+Implements \hyperlink{class_auto_command}{Auto\+Command}.
+
+\mbox{\Hypertarget{class_pivot_command_acc8ed3e6a76a19a05201131f0bd7ccc5}\label{class_pivot_command_acc8ed3e6a76a19a05201131f0bd7ccc5}} 
+\index{Pivot\+Command@{Pivot\+Command}!Is\+Done@{Is\+Done}}
+\index{Is\+Done@{Is\+Done}!Pivot\+Command@{Pivot\+Command}}
+\subsubsection{\texorpdfstring{Is\+Done()}{IsDone()}}
+{\footnotesize\ttfamily bool Pivot\+Command\+::\+Is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+is\+Done\+\_\+ 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_auto_command}{Auto\+Command}.
+
+\mbox{\Hypertarget{class_pivot_command_a728a96471b607920a8e3581b15c2a6ed}\label{class_pivot_command_a728a96471b607920a8e3581b15c2a6ed}} 
+\index{Pivot\+Command@{Pivot\+Command}!Reset@{Reset}}
+\index{Reset@{Reset}!Pivot\+Command@{Pivot\+Command}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Pivot\+Command\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Refresh ini, set init\+Yaw to navx P\+ID, create new P\+I\+D\+Controller, Pivot\+P\+ID, and enables it \mbox{\Hypertarget{class_pivot_command_ab43066cd70a708f342f53f94558acf98}\label{class_pivot_command_ab43066cd70a708f342f53f94558acf98}} 
+\index{Pivot\+Command@{Pivot\+Command}!Update@{Update}}
+\index{Update@{Update}!Pivot\+Command@{Pivot\+Command}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Pivot\+Command\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{curr\+Time\+Sec,  }\item[{double}]{delta\+Time\+Sec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+If Pivot\+P\+ID not done, checks if Pivot\+P\+ID is on target and if Talon\+Output is less than the minimum drive output, we set is\+Done to true and Reset and Disable Pivot\+P\+ID Note\+: times out at 5 seconds from start of \hyperlink{class_pivot_command}{Pivot\+Command} 
+\begin{DoxyParams}{Parameters}
+{\em curr\+Time\+Sec} & a double is the current time in seconds \\
+\hline
+{\em delta\+Time\+Sec} & a double is the update interval in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_auto_command}{Auto\+Command}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_pivot_command_aa0b7e3b621788df09e8f2cc3c184b858}\label{class_pivot_command_aa0b7e3b621788df09e8f2cc3c184b858}} 
+\index{Pivot\+Command@{Pivot\+Command}!min\+Drive\+Pivot\+Output\+\_\+@{min\+Drive\+Pivot\+Output\+\_\+}}
+\index{min\+Drive\+Pivot\+Output\+\_\+@{min\+Drive\+Pivot\+Output\+\_\+}!Pivot\+Command@{Pivot\+Command}}
+\subsubsection{\texorpdfstring{min\+Drive\+Pivot\+Output\+\_\+}{minDrivePivotOutput\_}}
+{\footnotesize\ttfamily double Pivot\+Command\+::min\+Drive\+Pivot\+Output\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Minimum output we would correct for, if less, than it can be considered done 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
